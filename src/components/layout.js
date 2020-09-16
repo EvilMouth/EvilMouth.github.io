@@ -4,12 +4,11 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
-  const _root = '/blog'
-  const root = _root.startsWith('/') ? _root.slice(1) : _root
-  const rootPath = `${__PATH_PREFIX__}/${root}/`
+  const rootPath = `${__PATH_PREFIX__}/`
+  const blogPath = `${__PATH_PREFIX__}/blog/`
   let header
 
-  if (location.pathname === rootPath) {
+  if (location.pathname === rootPath || location.pathname === blogPath) {
     header = (
       <h1
         style={{
@@ -23,7 +22,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/${root}/`}
+          to={`/blog/`}
         >
           {title}
         </Link>
@@ -42,7 +41,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/${root}/`}
+          to={`/blog/`}
         >
           {title}
         </Link>
