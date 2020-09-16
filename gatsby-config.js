@@ -6,7 +6,7 @@ module.exports = {
       summary: `who lives and works in China building useful things.`,
     },
     description: `Learn. Record. To consolidate.`,
-    siteUrl: `https://blog.evilmouth.net/`,
+    siteUrl: `https://evilmouth.net/`,
     social: {
       twitter: `EvilLittleMouth`,
     },
