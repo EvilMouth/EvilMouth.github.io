@@ -6,9 +6,10 @@ import { rhythm, scale } from "../utils/typography"
 const Layout = ({ location, title, children }) => {
   const _root = '/blog'
   const root = _root.startsWith('/') ? _root.slice(1) : _root
-  const rootPath = `${__PATH_PREFIX__}/${root}`
+  const rootPath = `${__PATH_PREFIX__}/${root}/`
   let header
 
+  console.log(location)
   if (location.pathname === rootPath) {
     header = (
       <h1
@@ -23,7 +24,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/${root}`}
+          to={`/${root}/`}
         >
           {title}
         </Link>
@@ -42,7 +43,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/${root}`}
+          to={`/${root}/`}
         >
           {title}
         </Link>
