@@ -6,6 +6,7 @@ import { rhythm, scale } from "../utils/typography"
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const blogPath = `${__PATH_PREFIX__}/blog/`
+  const linkTo = location.pathname === rootPath ? `/` : `/blog/`
   let header
 
   if (location.pathname === rootPath || location.pathname === blogPath) {
@@ -22,7 +23,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/blog/`}
+          to={linkTo}
         >
           {title}
         </Link>
@@ -41,7 +42,7 @@ const Layout = ({ location, title, children }) => {
             boxShadow: `none`,
             color: `inherit`,
           }}
-          to={`/blog/`}
+          to={linkTo}
         >
           {title}
         </Link>
