@@ -1,0 +1,3 @@
+[submodule "content/_posts"]
+	path = content/_posts
+	url = git@github.com:EvilMouth/_posts.git
