@@ -9,7 +9,6 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/${root}/`
   let header
 
-  console.log(location)
   if (location.pathname === rootPath) {
     header = (
       <h1
