@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.1a54add997246827ae7a.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.24.54"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4f43ece4ac226936d08ff477d95d5385" type="image/png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4f43ece4ac226936d08ff477d95d5385"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4f43ece4ac226936d08ff477d95d5385"/><title data-react-helmet="true">上传项目到jcenter | Evil Mouth&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="上传项目到jcenter - jcenter - Maven"/><meta data-react-helmet="true" property="og:title" content="上传项目到jcenter"/><meta data-react-helmet="true" property="og:description" content="上传项目到jcenter - jcenter - Maven"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="EvilLittleMouth"/><meta data-react-helmet="true" name="twitter:title" content="上传项目到jcenter"/><meta data-react-helmet="true" name="twitter:description" content="上传项目到jcenter - jcenter - Maven"/><link as="script" rel="preload" href="/webpack-runtime-24ab159acb8aa5fc60eb.js"/><link as="script" rel="preload" href="/styles-f7a64dad1c13bebc31fd.js"/><link as="script" rel="preload" href="/framework-63ec46a3540d83159f28.js"/><link as="script" rel="preload" href="/app-649157d1ef397d933a3f.js"/><link as="script" rel="preload" href="/9823def0f0e3e77a6a0a0a70a9634b9df29ec52f-8e903c7088d4b70d953d.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-bbba54f9ab1ab02a647c.js"/><link as="fetch" rel="preload" href="/page-data/maven-jcenter/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/blog/">Evil Mouth&#x27;s Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">上传项目到jcenter</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">May 08, 2017</p></header><section><p>记录一下<code class="language-text">Android</code>开发发布项目到<code class="language-text">jcenter</code>的过程</p>
+<p>Android开发过程中需要拉很多依赖，比如官方的库，通常都是一句话调用，非常方便
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b5847308791d84b76647889938514062/844cc/1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 3.378378378378378%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAANUlEQVQI1yXIyQkAIAwAQTvKHY0a7L8rI8Iyj22kWHFlhASlOCHDn095okBN77HyzJ1q7iMuZz0MD/Pr2wkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/b5847308791d84b76647889938514062/fcda8/1.png"
+        srcset="/static/b5847308791d84b76647889938514062/12f09/1.png 148w,
+/static/b5847308791d84b76647889938514062/e4a3f/1.png 295w,
+/static/b5847308791d84b76647889938514062/fcda8/1.png 590w,
+/static/b5847308791d84b76647889938514062/efc66/1.png 885w,
+/static/b5847308791d84b76647889938514062/c83ae/1.png 1180w,
+/static/b5847308791d84b76647889938514062/844cc/1.png 1306w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>之前也使用过<code class="language-text">jitPack</code>，比起<code class="language-text">jcenter</code>方便很多，不过使用的人没有用<code class="language-text">jcenter</code>的多，新建Android项目也不会自己配置，如果你想用<code class="language-text">jitPack</code>，可以看这篇文章<a href="http://zyhang.com/2017/05/08/maven-jitpack/">上传项目到jitpack</a></p>
+<!-- More -->
+<p>那么现在开始配置</p>
+<h2>创建bintray账号</h2>
+<p><a href="https://bintray.com/signup/oss">https://bintray.com/signup/oss</a>
+要发布到<code class="language-text">jcenter</code>需要有个<code class="language-text">bintray</code>账号管理你的仓库，上面是注册链接。注意这一步非常关键，因为你如果直接搜<code class="language-text">bintray</code>跳去官网首页并注册的话是注册企业账号，是只有30天试用而且后续操作也会不同，所以千万注意要注册的是个人账号。
+点链接进去之后选<code class="language-text">Sign up with Github</code>用<code class="language-text">Github</code>账号注册就好了，这里填写注册资料，里面的<code class="language-text">Username</code>比较重要，关乎后面项目的配置
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 89.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABv0lEQVQ4y6WTXUsbQRSG89OkiCDBW0VbG4NeKAX7cdGWxlSN+Av0UsT2ppZ4UUoL1YZe+kMkEJJ0d+f7I7tZfXcnm2SFNEWfZJd3z8w7Zw4zp6DG0UobbVK01sP3UKg8hfEPxli32+10Ou122/M8aN/z2ikuThnFKjmzyXB+SgkQnFNKOee+7wdBwFjyKeVoMlYpWGtvH0QYhgMzypVSIHOY0UuJ49jtCJF+RhRF98wKOxRCwHDPjCHEEYkz4M+ZsZizRWO4PEPDxMxwIjOSYN7Uat2cnBli/GD/Tc6MU73JaDabrVbLmwwOD8mx+VHNQ8L/IJc57IVKKCON1dOPPe7na9Y9LYyQRuLNDWeaMs2YwW1MRaK5tFJahb+yamB21b/99W7m5Enx88L8p+Lil+XSxfpqvfz0a6l8sfG8vrZaX1s+f4ah+bPi7Onc0vmKDjXyD8xH18eb37Ze/Xzz8sfr95cf9hq13UZt5+rjwZ9DiN3f+5XLqht98X27clW1ke1H/cfdbVwMKSWhJMAP/UQJ+i4VFBF0Eh6fUC8gPsEM4hHyNyBCyKSr3NVleeAZaTQj44TyJMYTgeXRBjDeAUmU6bOcsgGjAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/e9d31bdfd67de8a0fcddd6ca2822bd22/fcda8/2.png"
+        srcset="/static/e9d31bdfd67de8a0fcddd6ca2822bd22/12f09/2.png 148w,
+/static/e9d31bdfd67de8a0fcddd6ca2822bd22/e4a3f/2.png 295w,
+/static/e9d31bdfd67de8a0fcddd6ca2822bd22/fcda8/2.png 590w,
+/static/e9d31bdfd67de8a0fcddd6ca2822bd22/efc66/2.png 885w,
+/static/e9d31bdfd67de8a0fcddd6ca2822bd22/1132d/2.png 1158w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+注册完之后直接会跳到首页，这里还需要记住API key信息，也关乎后面项目配置。可以在个人资料页里面找到
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABPklEQVQoz41PPU8CQRDdP2phAxEwYmei0QJjaW3EQns1YqQjsdAYS/6AH4gGBPb27pa93dmZ3XM5gjEkJry8Zj7emzdst7PfuD/c6xxs3tW32tvl1sYvSzflOSutauW2Vm3VSu1a43KneXFUP16rnK+zKRcTwb9Hw0nEE5mCBQNmiRq0NtpYUHE07vei9x4qFTrMJipoRBQFEYJ1RIhIy5x1HbksiQcfL/yzr2RiAJh1mC9AREpKstYT+aLj5ywQSiCUoBRqgxBuMDEVFDydCzOr9Wg8zozxzmEqbSpJSpdlYW6Rgt6ilUqGRwAKMU85kvWF2Ly+DU5OB80zfnWNSWqFoCTN5TT8AiF5sZP/CcKEit2iojiWD4/p03PW7eaLxdz7/B8wMfxCIWbZFn6rg0HEvUh8pv38TsgWuJrLD9q88BxqaDk2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/ad35bec880b200e0bfd7ff3404c73a86/fcda8/3.png"
+        srcset="/static/ad35bec880b200e0bfd7ff3404c73a86/12f09/3.png 148w,
+/static/ad35bec880b200e0bfd7ff3404c73a86/e4a3f/3.png 295w,
+/static/ad35bec880b200e0bfd7ff3404c73a86/fcda8/3.png 590w,
+/static/ad35bec880b200e0bfd7ff3404c73a86/efc66/3.png 885w,
+/static/ad35bec880b200e0bfd7ff3404c73a86/c83ae/3.png 1180w,
+/static/ad35bec880b200e0bfd7ff3404c73a86/4f9e8/3.png 2432w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<h2>创建Repository</h2>
+<p>在bintray网站首页找到<code class="language-text">Add New Repository</code>创建仓库，注意<code class="language-text">Name</code>和<code class="language-text">Type</code>（其中的<code class="language-text">Name</code>不一定要起<code class="language-text">maven</code>）
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/10ce84987d9b77eddab03504f1a6507e/393aa/4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 110.8108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAIAAABPIytRAAAACXBIWXMAAAPoAAAD6AG1e1JrAAACLUlEQVQ4y51UvW/TQBT3n8vQgYUBGAoCisTAzIQgIwOCAQkJ0aGBIVLDgARpTNpU4Di1z9/3/Wne2VHUojQEfj6d7+z7vXvv995d4Jxr/xcBkIXgQgiptLHWGN/+gUwwoZQyIRvKKkwawnb0xpO1UVKqbk/T7wxeKKXho7XbvAhgcU1yRmrBCcUlIxVpSlIXFFfQlORgT2u90UrQOke5/DpbfpnG42l8PImOJ4vxyQKmo2/RaYSAK6QE/iZy26KKPn01Ohh8fjQY7j8/uv9y+ODF0cFgePvZx7efQlhg7WYNAl1WKl4alLks9y1Ftqz8nx1EC9RFiuIlxthZZ40FleQygfi8bh3c9Qg0ArVIUdee0LZe6iQFxkr67WTYmSUpywuSIoIymqTN2TmDsuEckg/8bW7LKEajMQ9P1exczuZiEqr5z3XMbisCfZGWGcrLoqhKyCbELKJYGe3r5ip033cgjGijA1M3/NeCRTFbLMUyAaZEmW3dWrAeMAEORKG6ly8b2Bk0znsUeZZlKENlXf3hXutL2BQ1rgmtMK0xLRoCddOdKi6apsG4AcN+rb2Cyyb6HqTox/2R9OCcQ45hQAhhjPFObfiy1rYvmsvnPwDbZVVmeQaaoRzB2Dizi9orsjOuXZVI1/ecrWnqI/Lks3z+PZmE6EeIQhicpFNl4IF86esqbEWGdD0+fHLj9d7d9/v3Pjzce3Pz1rs7jcA8QaSuIfS/3CQbf+xyMf4Gvsr2+Rt/6xIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/10ce84987d9b77eddab03504f1a6507e/fcda8/4.png"
+        srcset="/static/10ce84987d9b77eddab03504f1a6507e/12f09/4.png 148w,
+/static/10ce84987d9b77eddab03504f1a6507e/e4a3f/4.png 295w,
+/static/10ce84987d9b77eddab03504f1a6507e/fcda8/4.png 590w,
+/static/10ce84987d9b77eddab03504f1a6507e/efc66/4.png 885w,
+/static/10ce84987d9b77eddab03504f1a6507e/c83ae/4.png 1180w,
+/static/10ce84987d9b77eddab03504f1a6507e/393aa/4.png 1190w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>添加插件</h2>
+<p>为根目录的<code class="language-text">build.gradle</code>的<code class="language-text">dependencies</code>添加<code class="language-text">bintray</code>插件</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">classpath &#39;com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3&#39;
+classpath &#39;com.github.dcendents:android-maven-gradle-plugin:1.5&#39;</code></pre></div>
+<h2>修改module</h2>
+<p>修改你想发布的<code class="language-text">library</code>级别的module的<code class="language-text">build.gradle</code>，直接在后面添加如下代码</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">ext {
+    bintrayRepo = &#39;maven&#39;//上面创建`Repository`的是`Name`
+    bintrayName = &#39;damon&#39;//你想要发布的仓库的名称
+
+    publishedGroupId = &#39;com.zyhang&#39;//groupId，跟下面的artifact组合
+    artifact = &#39;damon&#39;//artifact，跟上面的groupId组合，到时候别人拉依赖就是`compile &#39;com.zyhang:damon:1.0.0&#39;`
+
+    siteUrl = &#39;https://github.com/izyhang/Damon&#39;//项目地址
+    gitUrl = &#39;https://github.com/izyhang/Damon.git&#39;//项目git地址
+
+    libraryVersion = &#39;1.0.0&#39;//版本号
+    libraryName = &#39;Damon&#39;//名称
+    libraryDescription = &#39;a android mvp framework based on rxjava rxlifecycle&#39;//介绍
+
+    developerId = &#39;zyhang&#39;//开发者id
+    developerName = &#39;zyhang&#39;//开发者名称
+    developerEmail = &#39;zyhang4502@gmail.com&#39;//开发者邮箱
+
+    //以下不用改动
+    licenseName = &#39;The Apache Software License, Version 2.0&#39;
+    licenseUrl = &#39;http://www.apache.org/licenses/LICENSE-2.0.txt&#39;
+    allLicenses = [&quot;Apache-2.0&quot;]
+}
+
+//这两句是编译上传配置
+apply from:&#39;../gradle/install.gradle&#39;
+apply from:&#39;../gradle/bintray.gradle&#39;</code></pre></div>
+<h2>配置用户信息和API key</h2>
+<p>打开项目的<code class="language-text">local.properties</code>文件并增加</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">bintray.user=zyhang//刚才`Username
+bintray.apikey=*********************************//刚才的API key</code></pre></div>
+<h2>编译上传配置</h2>
+<p>在项目的<code class="language-text">gradle</code>文件夹新建两个文件<code class="language-text">install.gradle</code>和<code class="language-text">bintray.gradle</code>，其内容如下</p>
+<p><code class="language-text">install.gradle</code></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">apply plugin: &#39;com.github.dcendents.android-maven&#39;
+
+group = publishedGroupId                               // Maven Group ID for the artifact
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging &#39;aar&#39;
+                groupId publishedGroupId
+                artifactId artifact
+
+                // Add your description here
+                name libraryName
+                description libraryDescription
+                url siteUrl
+
+                // Set your license
+                licenses {
+                    license {
+                        name licenseName
+                        url licenseUrl
+                    }
+                }
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                        email developerEmail
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}</code></pre></div>
+<p><code class="language-text">bintray.gradle</code></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">apply plugin: &#39;com.jfrog.bintray&#39;
+
+version = libraryVersion
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = &#39;sources&#39;
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+android.libraryVariants.all { variant -&gt;
+    println variant.javaCompile.classpath.files
+    if(variant.name == &#39;release&#39;) {
+        task(&quot;generate${variant.name.capitalize()}Javadoc&quot;, type: Javadoc) {
+            // title = &#39;&#39;
+            // description = &#39;&#39;
+            source = variant.javaCompile.source
+            classpath = files(variant.javaCompile.classpath.files, project.android.getBootClasspath())
+            options {
+                encoding &quot;utf-8&quot;
+                links &quot;http://docs.oracle.com/javase/7/docs/api/&quot;
+                linksOffline &quot;http://d.android.com/reference&quot;, &quot;${android.sdkDirectory}/docs/reference&quot;
+            }
+            exclude &#39;**/BuildConfig.java&#39;
+            exclude &#39;**/R.java&#39;
+        }
+        task(&quot;javadoc${variant.name.capitalize()}Jar&quot;, type: Jar, dependsOn: &quot;generate${variant.name.capitalize()}Javadoc&quot;) {
+            classifier = &#39;javadoc&#39;
+            from tasks.getByName(&quot;generate${variant.name.capitalize()}Javadoc&quot;).destinationDir
+        }
+        artifacts {
+            archives tasks.getByName(&quot;javadoc${variant.name.capitalize()}Jar&quot;)
+        }
+    }
+}
+
+// Bintray
+Properties properties = new Properties()
+properties.load(project.rootProject.file(&#39;local.properties&#39;).newDataInputStream())
+
+bintray {
+    user = properties.getProperty(&quot;bintray.user&quot;)
+    key = properties.getProperty(&quot;bintray.apikey&quot;)
+
+    configurations = [&#39;archives&#39;]
+    pkg {
+        repo = bintrayRepo
+        name = bintrayName
+        desc = libraryDescription
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = allLicenses
+        publish = true
+        publicDownloadNumbers = true
+        version {
+            desc = libraryDescription
+            gpg {
+                sign = true //Determines whether to GPG sign the files. The default is false
+                passphrase = properties.getProperty(&quot;bintray.gpg.password&quot;)
+                //Optional. The passphrase for GPG signing&#39;
+            }
+        }
+    }
+}</code></pre></div>
+<h2>上传</h2>
+<p>配置完成，准备上传到<code class="language-text">bintray</code>
+直接使用<code class="language-text">Android Studio</code>的<code class="language-text">Terminal</code></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">./gradlew install
+./gradlew bintrayupload</code></pre></div>
+<p>如果遇到<code class="language-text">permission denied: ./gradlew</code>
+可以先执行<code class="language-text">chmod +x gradlew</code></p>
+<p>等待编译成功出现SUCCESS，这时候再上<code class="language-text">bintray</code>就可以在刚才创建的<code class="language-text">Repository</code>找到你的<code class="language-text">library</code>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bc2aaa1757b66759883fc9cd235fa1bd/c929c/5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 87.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABe0lEQVQ4y6VTSXLjMAz0/x+VL+Sc5JSy48lYJMUFIMBNDCTLKmfxJKnpaukAsYVGC9r13jkXh1RrbbVO01Rraa2WBVLMOdelvqK1hZMId3IB58EhIFkPHtB5gEil5GuUDa0J23QRy4uZExIbh8aBssFBrF+i1OxDsa4BruKUmJkwJg+RiaSlFKfP6L1h5P0RtI7P+85p7SzTplwppcVh7TcwpZT+vNKg+PjaS9l9fajfhjg482wbEbVWWmuK8d2pf+Iyc87WB8CorXch2oCjTE9cb0Py3tJukWXcIlGPHrUNxgWM1H4iPns4339tewtpDuJy/wl2/T+wLgmABIYy+LcCMSyrJAFtaaeA4LWJ1jYJOdJHEkl95gJJk1JexY1z2p/y4cgnVZXpo1tp7MzRNj02Y6s8He26J5ttOCh1dz8cDns1aO+Udzq4EcCnPEYynJf/r0+5iH79DJt43njnzcPjy9NT/Hui0yDkQSVlaNCktDSUA2Jq9nXV+Q0o1eUjGYPqFQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/bc2aaa1757b66759883fc9cd235fa1bd/fcda8/5.png"
+        srcset="/static/bc2aaa1757b66759883fc9cd235fa1bd/12f09/5.png 148w,
+/static/bc2aaa1757b66759883fc9cd235fa1bd/e4a3f/5.png 295w,
+/static/bc2aaa1757b66759883fc9cd235fa1bd/fcda8/5.png 590w,
+/static/bc2aaa1757b66759883fc9cd235fa1bd/efc66/5.png 885w,
+/static/bc2aaa1757b66759883fc9cd235fa1bd/c83ae/5.png 1180w,
+/static/bc2aaa1757b66759883fc9cd235fa1bd/c929c/5.png 1218w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>添加到jcenter</h2>
+<p>虽然现在你的<code class="language-text">library</code>已经发布了，但是也只是发布在你个人的<code class="language-text">Maven</code>仓库中，如果别人要添加此依赖，还必须定义你的仓库的地址，如下</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">repositories {
+    maven {
+        url  &quot;http://dl.bintray.com/zyhang/maven&quot;//此地址可以在`package`页的`SET ME UP`里面找到
+    }
+}
+
+...
+
+dependencies {
+    compile &#39;com.zyhang:damon:1.0.0&#39;
+}</code></pre></div>
+<p>但是这样就与我们的预期不一致了，我们是想要一句话直接调用，不需要再去定义什么仓库地址，所以此时你只需要同步你的仓库到<code class="language-text">jcenter</code>就行了
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/455bb0a4ac83c028c6987be8fd7e636f/076ca/6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.27027027027027%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAiElEQVQI142PWwvCMAyF9///o5vrhSI6Gmsvabumy6ovgg9+hEM4cMjJ1P+Dai1ao5JZ66xUMYZam4gIwMITGET8laNTAcwsljvcHrBubltEd25qrXnvQwgxRsx5r1/sDCtRfXl3ma2QTki7Sn9de87nZc4kBlMpJQ1wkFJ8m58KtXbex/AXbBzhAegwitTf4QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/455bb0a4ac83c028c6987be8fd7e636f/fcda8/6.png"
+        srcset="/static/455bb0a4ac83c028c6987be8fd7e636f/12f09/6.png 148w,
+/static/455bb0a4ac83c028c6987be8fd7e636f/e4a3f/6.png 295w,
+/static/455bb0a4ac83c028c6987be8fd7e636f/fcda8/6.png 590w,
+/static/455bb0a4ac83c028c6987be8fd7e636f/efc66/6.png 885w,
+/static/455bb0a4ac83c028c6987be8fd7e636f/076ca/6.png 914w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+然后提交坐等<code class="language-text">approved</code>就可以了，第二天就会收到邮件，现在就可以直接一句话拉依赖了
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bf6ceb8239547f6fb604d174ee439d5e/c95f0/7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAgElEQVQI152PzQoCMQyE+/6vKKKg2LT5bbe1uwpdA4tHL34zzGSOCfu+T9dfBLCblzZLmsjI0x0FHuyOkcFvNEyaUaj3Pg5af5YazvcTFdaqESMgAAEJEVPOCRkzZfIlzMoiYmqqaqVITHS5hlqqFRuvta1te2/LWOb8+cX8cswP0/rl3bNEiwQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/bf6ceb8239547f6fb604d174ee439d5e/fcda8/7.png"
+        srcset="/static/bf6ceb8239547f6fb604d174ee439d5e/12f09/7.png 148w,
+/static/bf6ceb8239547f6fb604d174ee439d5e/e4a3f/7.png 295w,
+/static/bf6ceb8239547f6fb604d174ee439d5e/fcda8/7.png 590w,
+/static/bf6ceb8239547f6fb604d174ee439d5e/efc66/7.png 885w,
+/static/bf6ceb8239547f6fb604d174ee439d5e/c83ae/7.png 1180w,
+/static/bf6ceb8239547f6fb604d174ee439d5e/c95f0/7.png 1842w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1a6b28434d0f74c28e944fc5b0421a9e/8cdda/8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAd0lEQVQY05WQQQ7EIAhFvf81NZlFYztYBxRF+9NuOwsfGAnJC4rrvYtwKQXF/IOZaevIhuymitvQd9BijERfEbE3xhgsdTso0rlTpvO37QkF+g5nIm7mIq61huG1VlVdlp+HPR9blpk5hOC9Tykty9jT5ybnvCpf1e2d+9yD4ooAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/1a6b28434d0f74c28e944fc5b0421a9e/fcda8/8.png"
+        srcset="/static/1a6b28434d0f74c28e944fc5b0421a9e/12f09/8.png 148w,
+/static/1a6b28434d0f74c28e944fc5b0421a9e/e4a3f/8.png 295w,
+/static/1a6b28434d0f74c28e944fc5b0421a9e/fcda8/8.png 590w,
+/static/1a6b28434d0f74c28e944fc5b0421a9e/efc66/8.png 885w,
+/static/1a6b28434d0f74c28e944fc5b0421a9e/8cdda/8.png 1168w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>总结</h2>
+<p>之所以配置到<code class="language-text">jcenter</code>能够使别人一句话拉依赖其实也是因为使用<code class="language-text">jcenter</code>的人是最多的，所以谷歌也直接帮我们自动配置了<code class="language-text">jcenter</code>，在使用<code class="language-text">Android Studio</code>新建项目的时候就可以看到
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 536px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d13d2bbd2959489a5597ba9104a6a7c9/2d920/9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.21621621621622%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAPoAAAD6AG1e1JrAAABF0lEQVQY03WQ207DMAyG9zRbazvNOWuTpi2j1QQ3oMHlhsSkwfu/AV530yH4ZVuOoy92vLLWeu+VUlprpeQ1YZ8Tlpll/9HKWBfCNuWujjHlvompbmKbOz6llPlFaywhslWEgpAWYtj7sA11Y52Lbdekrs29z51LmWPlnPQBlAQp14IKIXAhhgPTZVmU7EXRpPw4PX0O01c/ftTpknfn9uEyTN+7/dGEZ+M2UNIS5k/RPI8gsQGIQpykTrHdP4zTsBu7YcxDX8c+1CeUhHTX2Tl/O/BFpbRFPFfmxfp3vz24cODEhVdj37Q5ClX+GpsXxm1nmqx1JUBAkZESYAJoAa+GyBVNBPewZ5h3BnCt32KBuP7Llm1ZPyjyX449FGxnAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="jsdelivr"
+        title="jsdelivr"
+        src="/static/d13d2bbd2959489a5597ba9104a6a7c9/2d920/9.png"
+        srcset="/static/d13d2bbd2959489a5597ba9104a6a7c9/12f09/9.png 148w,
+/static/d13d2bbd2959489a5597ba9104a6a7c9/e4a3f/9.png 295w,
+/static/d13d2bbd2959489a5597ba9104a6a7c9/2d920/9.png 536w"
+        sizes="(max-width: 536px) 100vw, 536px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p></section><hr style="margin-bottom:1.75rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/git-ssh-mac/">← <!-- -->git本地多ssh key管理</a></li><li><a rel="next" href="/maven-jitpack/">上传项目到jitpack<!-- --> →</a></li></ul></nav></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/maven-jcenter/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c07228f94719ddaf3c50.js"],"app":["/app-649157d1ef397d933a3f.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-56972c5527a7e942473e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-4ffb37b9bf081380ed51.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-52019674864e23d7221f.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-bbba54f9ab1ab02a647c.js"]};/*]]>*/</script><script src="/polyfill-c07228f94719ddaf3c50.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-bbba54f9ab1ab02a647c.js" async=""></script><script src="/9823def0f0e3e77a6a0a0a70a9634b9df29ec52f-8e903c7088d4b70d953d.js" async=""></script><script src="/app-649157d1ef397d933a3f.js" async=""></script><script src="/framework-63ec46a3540d83159f28.js" async=""></script><script src="/styles-f7a64dad1c13bebc31fd.js" async=""></script><script src="/webpack-runtime-24ab159acb8aa5fc60eb.js" async=""></script></body></html>
