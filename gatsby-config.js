@@ -6,7 +6,7 @@ module.exports = {
       summary: `who lives and works in China building useful things.`,
     },
     description: `Learn. Record. To consolidate.`,
-    siteUrl: `https://evilmouth.net/`,
+    siteUrl: `https://evilmouth.net`,
     social: {
       twitter: `EvilLittleMouth`,
     },
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Evil Mouth's Blog`,
+        name: `Evil Mouth`,
         short_name: `evilmouth`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -79,5 +79,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`
   ],
 }
