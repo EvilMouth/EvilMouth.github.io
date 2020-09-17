@@ -11,6 +11,14 @@ const AboutIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" description={siteDescription} />
+      <article>
+        <p>Android Developer</p>
+        <p>Love Music, See What I Am Listening</p>
+        <img
+          src="https://spotify-github-profile.vercel.app/api/view?uid=izyhang&cover_image=true"
+          alt="spotify-github-profile"
+        ></img>
+      </article>
     </Layout>
   )
 }
