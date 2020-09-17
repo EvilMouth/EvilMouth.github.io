@@ -1,15 +1,14 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, linkTo, smallTitle, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  const blogPath = `${__PATH_PREFIX__}/blog/`
-  const linkTo = location.pathname === rootPath ? `/` : `/blog/`
   let header
 
-  if (location.pathname === rootPath || location.pathname === blogPath) {
+  if (location.pathname === rootPath || !smallTitle) {
     header = (
       <h1
         style={{
@@ -67,6 +66,16 @@ const Layout = ({ location, title, children }) => {
       </footer> */}
     </div>
   )
+}
+
+Layout.defaultProps = {
+  linkTo: `/`,
+  smallTitle: false,
+}
+
+Layout.propTypes = {
+  linkTo: PropTypes.string,
+  smallTitle: PropTypes.bool,
 }
 
 export default Layout
