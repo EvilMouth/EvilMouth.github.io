@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,7 +14,7 @@ const Index = ({ data, location }) => {
       <div>
         <ul>
           <li>
-            <a href="/blog">read Blog</a>
+            <Link to="/blog/">read Blog</Link>
           </li>
           <li>
             <a href="https://github.com/EvilMouth">fork Github</a>
