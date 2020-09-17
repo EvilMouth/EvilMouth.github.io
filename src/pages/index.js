@@ -14,7 +14,9 @@ const Index = ({ data, location }) => {
       <div>
         <ul>
           <li>
-            <Link to="/blog/">read Blog</Link>
+            <Link to="/blog/" rel="blog">
+              read Blog
+            </Link>
           </li>
           <li>
             <a href="https://github.com/EvilMouth">fork Github</a>
@@ -26,7 +28,9 @@ const Index = ({ data, location }) => {
             <a href="https://telegram.me/EvilLittleMouth">chat Telegram</a>
           </li>
           <li>
-            <Link to="/about/">see About</Link>
+            <Link to="/about/" rel="about">
+              see About
+            </Link>
           </li>
         </ul>
       </div>
