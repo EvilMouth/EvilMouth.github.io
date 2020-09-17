@@ -56,6 +56,13 @@ module.exports = {
         trackingId: `UA-177389301-1`,
       },
     },
+    {
+      resolve: `gatsby-plugin-baidu-analytics`,
+      options: {
+        siteId: `a23fc26fb8c87ab6a05607681dd70056`,
+        head: false,
+      },
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
