@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Sep 2020 03:19:11 GMT</lastBuildDate><item><title><![CDATA[Flutter InheritedWidget]]></title><description><![CDATA[分析 Flutter 非常特殊的 InheritedWidget，仅次于 StatelessWidget 和 StatefulWidget InheritedWidget 介绍 Base class for widgets that efficiently propagate…]]></description><link>https://evilmouth.net/flutter-inherited-widget/</link><guid isPermaLink="false">https://evilmouth.net/flutter-inherited-widget/</guid><pubDate>Fri, 04 Sep 2020 17:03:01 GMT</pubDate><content:encoded>&lt;p&gt;分析 Flutter 非常特殊的 InheritedWidget，仅次于 StatelessWidget 和 StatefulWidget&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Sep 2020 06:23:50 GMT</lastBuildDate><item><title><![CDATA[Flutter InheritedWidget]]></title><description><![CDATA[分析 Flutter 非常特殊的 InheritedWidget，仅次于 StatelessWidget 和 StatefulWidget InheritedWidget 介绍 Base class for widgets that efficiently propagate…]]></description><link>https://evilmouth.net/flutter-inherited-widget/</link><guid isPermaLink="false">https://evilmouth.net/flutter-inherited-widget/</guid><pubDate>Fri, 04 Sep 2020 17:03:01 GMT</pubDate><content:encoded>&lt;p&gt;分析 Flutter 非常特殊的 InheritedWidget，仅次于 StatelessWidget 和 StatefulWidget&lt;/p&gt;
 &lt;h2&gt;InheritedWidget 介绍&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Base class for widgets that efficiently propagate information down the tree.&lt;/p&gt;
@@ -1998,8 +1998,8 @@ alipays://platformapi/startapp?appId=77700189&amp;#x26;page=pages%2Findex%2Finde
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/15a737dee3f00b2776ecef53fc056b51/1c72d/1.jpg&quot;
         srcset=&quot;/static/15a737dee3f00b2776ecef53fc056b51/a80bd/1.jpg 148w,
 /static/15a737dee3f00b2776ecef53fc056b51/1c91a/1.jpg 295w,
@@ -2030,8 +2030,8 @@ alipays://platformapi/startapp?appId=77700189&amp;#x26;page=pages%2Findex%2Finde
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/82adaf75820a83ca819cb1fb9239eb55/1c72d/2.jpg&quot;
         srcset=&quot;/static/82adaf75820a83ca819cb1fb9239eb55/a80bd/2.jpg 148w,
 /static/82adaf75820a83ca819cb1fb9239eb55/1c91a/2.jpg 295w,
@@ -2063,8 +2063,8 @@ alipays://platformapi/startapp?appId=77700189&amp;#x26;page=pages%2Findex%2Finde
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
         src=&quot;/static/8d571a9ed50a5ac264b44766a481fe7f/1c72d/3.jpg&quot;
         srcset=&quot;/static/8d571a9ed50a5ac264b44766a481fe7f/a80bd/3.jpg 148w,
 /static/8d571a9ed50a5ac264b44766a481fe7f/1c91a/3.jpg 295w,
@@ -2110,8 +2110,8 @@ intent&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/17896d7a2407f8d800198c6e9e158f8c/1c72d/1.jpg&quot;
         srcset=&quot;/static/17896d7a2407f8d800198c6e9e158f8c/a80bd/1.jpg 148w,
 /static/17896d7a2407f8d800198c6e9e158f8c/1c91a/1.jpg 295w,
@@ -2205,8 +2205,8 @@ $ gradle publish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/e9386d50d97d62424a3aa8ecd2852199/1c72d/2.jpg&quot;
         srcset=&quot;/static/e9386d50d97d62424a3aa8ecd2852199/a80bd/2.jpg 148w,
 /static/e9386d50d97d62424a3aa8ecd2852199/1c91a/2.jpg 295w,
@@ -2498,8 +2498,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/05cb097feb40655fe8f6f5b0c9a810de/1c72d/1.jpg&quot;
         srcset=&quot;/static/05cb097feb40655fe8f6f5b0c9a810de/a80bd/1.jpg 148w,
 /static/05cb097feb40655fe8f6f5b0c9a810de/1c91a/1.jpg 295w,
@@ -2554,8 +2554,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/d5814a128ac916d2dbeed2d1b368befc/1c72d/2.jpg&quot;
         srcset=&quot;/static/d5814a128ac916d2dbeed2d1b368befc/a80bd/2.jpg 148w,
 /static/d5814a128ac916d2dbeed2d1b368befc/1c91a/2.jpg 295w,
@@ -2591,8 +2591,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
         src=&quot;/static/ebf0078635ecd97eb4a7fb9a8db794c8/1c72d/3.jpg&quot;
         srcset=&quot;/static/ebf0078635ecd97eb4a7fb9a8db794c8/a80bd/3.jpg 148w,
 /static/ebf0078635ecd97eb4a7fb9a8db794c8/1c91a/3.jpg 295w,
@@ -2704,8 +2704,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/d96cf78aa2d2b34c6baefa2efdfb8cd4/1c72d/1.jpg&quot;
         srcset=&quot;/static/d96cf78aa2d2b34c6baefa2efdfb8cd4/a80bd/1.jpg 148w,
 /static/d96cf78aa2d2b34c6baefa2efdfb8cd4/1c91a/1.jpg 295w,
@@ -2868,8 +2868,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/71b916fd5fd5080508a83b9b02a662d7/1c72d/1.jpg&quot;
         srcset=&quot;/static/71b916fd5fd5080508a83b9b02a662d7/a80bd/1.jpg 148w,
 /static/71b916fd5fd5080508a83b9b02a662d7/1c91a/1.jpg 295w,
@@ -2899,8 +2899,8 @@ var24&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/2f97257bf0d7b1af4dfd01349d81b6e2/1c72d/2.jpg&quot;
         srcset=&quot;/static/2f97257bf0d7b1af4dfd01349d81b6e2/a80bd/2.jpg 148w,
 /static/2f97257bf0d7b1af4dfd01349d81b6e2/1c91a/2.jpg 295w,
@@ -3332,8 +3332,8 @@ apply from&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;spa
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/482a493e8fea0ff4d51334a93c51d74d/1c72d/1.jpg&quot;
         srcset=&quot;/static/482a493e8fea0ff4d51334a93c51d74d/a80bd/1.jpg 148w,
 /static/482a493e8fea0ff4d51334a93c51d74d/1c91a/1.jpg 295w,
@@ -3387,8 +3387,8 @@ intent&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cla
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/91323db483b2226645ed9aef2b15d8ce/1c72d/1.jpg&quot;
         srcset=&quot;/static/91323db483b2226645ed9aef2b15d8ce/a80bd/1.jpg 148w,
 /static/91323db483b2226645ed9aef2b15d8ce/1c91a/1.jpg 295w,
@@ -3459,8 +3459,8 @@ Android市场混乱，所以魔窗的这套解决方案的确很妙&lt;/p&gt;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/49fd5d8b53d29b16c78137ab7ae07cad/1c72d/2.jpg&quot;
         srcset=&quot;/static/49fd5d8b53d29b16c78137ab7ae07cad/a80bd/2.jpg 148w,
 /static/49fd5d8b53d29b16c78137ab7ae07cad/1c91a/2.jpg 295w,
@@ -3512,11 +3512,11 @@ Android市场混乱，所以魔窗的这套解决方案的确很妙&lt;/p&gt;
             &lt;span class=&quot;token function&quot;&gt;finish&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[CoordinatorLayout+RecyclerView加载更多时自动滑动的问题]]></title><description><![CDATA[记录一下+组合联动时，滑到底部触发加载更多并通过添加数据时，会顺着继续滑动的问题。 问题GIF 使用联动的情况下（普通情况不会），加载更多是通过设置的方式注入实现的。当快速滑动时，通过插入数据到尾部，则会发生下图所示的情况。 jsdelivr…]]></description><link>https://evilmouth.net/coordinatorlayout-recyclerview-jia-zai-geng-duo-shi-zi-dong-hua-dong-de-wen-ti/</link><guid isPermaLink="false">https://evilmouth.net/coordinatorlayout-recyclerview-jia-zai-geng-duo-shi-zi-dong-hua-dong-de-wen-ti/</guid><pubDate>Fri, 15 Jun 2018 16:34:17 GMT</pubDate><content:encoded>&lt;p&gt;记录一下&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;组合联动时，滑到底部触发加载更多并通过&lt;code class=&quot;language-text&quot;&gt;notifyItemRangeInserted&lt;/code&gt;添加数据时，&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;会顺着继续滑动的问题。&lt;/p&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[CoordinatorLayout+RecyclerView加载更多时自动滑动的问题]]></title><description><![CDATA[记录一下+组合联动时，滑到底部触发加载更多并通过添加数据时，会顺着继续滑动的问题。 问题GIF…]]></description><link>https://evilmouth.net/coordinatorlayout-recyclerview-jia-zai-geng-duo-shi-zi-dong-hua-dong-de-wen-ti/</link><guid isPermaLink="false">https://evilmouth.net/coordinatorlayout-recyclerview-jia-zai-geng-duo-shi-zi-dong-hua-dong-de-wen-ti/</guid><pubDate>Fri, 15 Jun 2018 16:34:17 GMT</pubDate><content:encoded>&lt;p&gt;记录一下&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;+&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;组合联动时，滑到底部触发加载更多并通过&lt;code class=&quot;language-text&quot;&gt;notifyItemRangeInserted&lt;/code&gt;添加数据时，&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;会顺着继续滑动的问题。&lt;/p&gt;
 &lt;!-- More --&gt;
 &lt;h1&gt;问题GIF&lt;/h1&gt;
 &lt;p&gt;使用&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;联动&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;的情况下（普通情况不会），加载更多是通过设置&lt;code class=&quot;language-text&quot;&gt;多Type&lt;/code&gt;的方式注入&lt;code class=&quot;language-text&quot;&gt;adapter&lt;/code&gt;实现的。当快速滑动&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;时，通过&lt;code class=&quot;language-text&quot;&gt;notifyItemRangeInserted&lt;/code&gt;插入数据到尾部，则会发生下图所示的情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/d7b92ce1acb8ee0c450f5c00af40e4d2/1.gif&quot; alt=&quot;jsdelivr&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/d7b92ce1acb8ee0c450f5c00af40e4d2/1.gif&quot;&gt;&lt;/p&gt;
 &lt;h1&gt;解决之路&lt;/h1&gt;
 &lt;h2&gt;焦点问题？&lt;/h2&gt;
 &lt;p&gt;在大多数场景是没有使用&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;的，正常的使用&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;是不会出现这种现象，所以一开始就觉得是&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;嵌套的焦点问题，焦点被&lt;code class=&quot;language-text&quot;&gt;RecyclerView&lt;/code&gt;抢夺导致自动滑动（Ps：以前见多了各种&lt;code class=&quot;language-text&quot;&gt;ScrollView&lt;/code&gt;嵌套的焦点问题）。所以给&lt;code class=&quot;language-text&quot;&gt;CoordinatorLayout&lt;/code&gt;做了焦点拦截，直接在布局文件设置属性&lt;/p&gt;
@@ -3556,7 +3556,7 @@ adapter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     mList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addAll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;list&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token function&quot;&gt;notifyItemRangeInserted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;index&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; list&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/abe9b45adcb057bb27468505e420ad2f/2.gif&quot; alt=&quot;jsdelivr&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[flutter-StatelessWidget与StatefulWidget的解耦]]></title><description><![CDATA[和是的基础组件，日常开发中自定义都是选择继承这两者之一。 两者的区别在于，面向那些始终不变的UI控件，比如标题栏中的标题；而则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。 就没什么好研究的了，的创建需要指定一个，在需要更新UI…]]></description><link>https://evilmouth.net/flutter-stateless-stateful-jie-ou/</link><guid isPermaLink="false">https://evilmouth.net/flutter-stateless-stateful-jie-ou/</guid><pubDate>Wed, 13 Jun 2018 15:54:47 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;StatelessWidget&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;flutter&lt;/code&gt;的基础组件，日常开发中自定义&lt;code class=&quot;language-text&quot;&gt;Widget&lt;/code&gt;都是选择继承这两者之一。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/abe9b45adcb057bb27468505e420ad2f/2.gif&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[flutter-StatelessWidget与StatefulWidget的解耦]]></title><description><![CDATA[和是的基础组件，日常开发中自定义都是选择继承这两者之一。 两者的区别在于，面向那些始终不变的UI控件，比如标题栏中的标题；而则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。 就没什么好研究的了，的创建需要指定一个，在需要更新UI…]]></description><link>https://evilmouth.net/flutter-stateless-stateful-jie-ou/</link><guid isPermaLink="false">https://evilmouth.net/flutter-stateless-stateful-jie-ou/</guid><pubDate>Wed, 13 Jun 2018 15:54:47 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;StatelessWidget&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;flutter&lt;/code&gt;的基础组件，日常开发中自定义&lt;code class=&quot;language-text&quot;&gt;Widget&lt;/code&gt;都是选择继承这两者之一。&lt;/p&gt;
 &lt;p&gt;两者的区别在于&lt;code class=&quot;language-text&quot;&gt;状态的改变&lt;/code&gt;，&lt;code class=&quot;language-text&quot;&gt;StatelessWidget&lt;/code&gt;面向那些始终不变的UI控件，比如标题栏中的标题；而&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;则是面向可能会改变UI状态的控件，比如有点击反馈的按钮。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;StatelessWidget&lt;/code&gt;就没什么好研究的了，&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;的创建需要指定一个&lt;code class=&quot;language-text&quot;&gt;State&lt;/code&gt;，在需要更新UI的时候调用&lt;code class=&quot;language-text&quot;&gt;setState(VoidCallback fn)&lt;/code&gt;，并在&lt;code class=&quot;language-text&quot;&gt;VoidCallback&lt;/code&gt;中改变一些变量数值等，组件会重新&lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt;以达到刷新状态也就是刷新UI的效果。&lt;/p&gt;
 &lt;p&gt;官方有个&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;的例子，通过点击按钮使屏幕上的&lt;code class=&quot;language-text&quot;&gt;Text&lt;/code&gt;数值逐渐增长，可以很好理解&lt;code class=&quot;language-text&quot;&gt;StatefulWidget&lt;/code&gt;的使用&lt;/p&gt;
@@ -3715,8 +3715,8 @@ https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/sigv4-UsingHTTPPOST.html�
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/3a5a5bbfcd1fd05a14dd6f93186e5670/18815/1.jpg&quot;
         srcset=&quot;/static/3a5a5bbfcd1fd05a14dd6f93186e5670/a80bd/1.jpg 148w,
 /static/3a5a5bbfcd1fd05a14dd6f93186e5670/1c91a/1.jpg 295w,
@@ -3789,8 +3789,8 @@ https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/API/sigv4-UsingHTTPPOST.html�
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/242d08c63ff3b6e066fc53b293384981/1c72d/2.jpg&quot;
         srcset=&quot;/static/242d08c63ff3b6e066fc53b293384981/a80bd/2.jpg 148w,
 /static/242d08c63ff3b6e066fc53b293384981/1c91a/2.jpg 295w,
@@ -4771,8 +4771,8 @@ annotationProcessor &lt;span class=&quot;token string&quot;&gt;&apos;android.arc
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/7f7468213b2caaab85b8061bf0c2fa89/1c72d/1.jpg&quot;
         srcset=&quot;/static/7f7468213b2caaab85b8061bf0c2fa89/a80bd/1.jpg 148w,
 /static/7f7468213b2caaab85b8061bf0c2fa89/1c91a/1.jpg 295w,
@@ -5268,8 +5268,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/2771d0507daab6085e69c730566150af/fcda8/1.png&quot;
         srcset=&quot;/static/2771d0507daab6085e69c730566150af/12f09/1.png 148w,
 /static/2771d0507daab6085e69c730566150af/e4a3f/1.png 295w,
@@ -5300,8 +5300,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/e61653bea2aa80f39db940f13665a4e6/fcda8/2.png&quot;
         srcset=&quot;/static/e61653bea2aa80f39db940f13665a4e6/12f09/2.png 148w,
 /static/e61653bea2aa80f39db940f13665a4e6/e4a3f/2.png 295w,
@@ -5331,8 +5331,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
         src=&quot;/static/68c1a4ecb3d1d5f2c66b67f1ba4b92ca/fcda8/3.png&quot;
         srcset=&quot;/static/68c1a4ecb3d1d5f2c66b67f1ba4b92ca/12f09/3.png 148w,
 /static/68c1a4ecb3d1d5f2c66b67f1ba4b92ca/e4a3f/3.png 295w,
@@ -5376,8 +5376,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/b5847308791d84b76647889938514062/fcda8/1.png&quot;
         srcset=&quot;/static/b5847308791d84b76647889938514062/12f09/1.png 148w,
 /static/b5847308791d84b76647889938514062/e4a3f/1.png 295w,
@@ -5408,8 +5408,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/e9d31bdfd67de8a0fcddd6ca2822bd22/fcda8/2.png&quot;
         srcset=&quot;/static/e9d31bdfd67de8a0fcddd6ca2822bd22/12f09/2.png 148w,
 /static/e9d31bdfd67de8a0fcddd6ca2822bd22/e4a3f/2.png 295w,
@@ -5432,8 +5432,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
         src=&quot;/static/ad35bec880b200e0bfd7ff3404c73a86/fcda8/3.png&quot;
         srcset=&quot;/static/ad35bec880b200e0bfd7ff3404c73a86/12f09/3.png 148w,
 /static/ad35bec880b200e0bfd7ff3404c73a86/e4a3f/3.png 295w,
@@ -5465,8 +5465,8 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;4&quot;
+        title=&quot;4&quot;
         src=&quot;/static/10ce84987d9b77eddab03504f1a6507e/fcda8/4.png&quot;
         srcset=&quot;/static/10ce84987d9b77eddab03504f1a6507e/12f09/4.png 148w,
 /static/10ce84987d9b77eddab03504f1a6507e/e4a3f/4.png 295w,
@@ -5654,8 +5654,8 @@ bintray {
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;5&quot;
+        title=&quot;5&quot;
         src=&quot;/static/bc2aaa1757b66759883fc9cd235fa1bd/fcda8/5.png&quot;
         srcset=&quot;/static/bc2aaa1757b66759883fc9cd235fa1bd/12f09/5.png 148w,
 /static/bc2aaa1757b66759883fc9cd235fa1bd/e4a3f/5.png 295w,
@@ -5700,8 +5700,8 @@ dependencies {
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;6&quot;
+        title=&quot;6&quot;
         src=&quot;/static/455bb0a4ac83c028c6987be8fd7e636f/fcda8/6.png&quot;
         srcset=&quot;/static/455bb0a4ac83c028c6987be8fd7e636f/12f09/6.png 148w,
 /static/455bb0a4ac83c028c6987be8fd7e636f/e4a3f/6.png 295w,
@@ -5732,8 +5732,8 @@ dependencies {
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;7&quot;
+        title=&quot;7&quot;
         src=&quot;/static/bf6ceb8239547f6fb604d174ee439d5e/fcda8/7.png&quot;
         srcset=&quot;/static/bf6ceb8239547f6fb604d174ee439d5e/12f09/7.png 148w,
 /static/bf6ceb8239547f6fb604d174ee439d5e/e4a3f/7.png 295w,
@@ -5764,8 +5764,8 @@ dependencies {
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;8&quot;
+        title=&quot;8&quot;
         src=&quot;/static/1a6b28434d0f74c28e944fc5b0421a9e/fcda8/8.png&quot;
         srcset=&quot;/static/1a6b28434d0f74c28e944fc5b0421a9e/12f09/8.png 148w,
 /static/1a6b28434d0f74c28e944fc5b0421a9e/e4a3f/8.png 295w,
@@ -5797,8 +5797,8 @@ dependencies {
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;9&quot;
+        title=&quot;9&quot;
         src=&quot;/static/d13d2bbd2959489a5597ba9104a6a7c9/2d920/9.png&quot;
         srcset=&quot;/static/d13d2bbd2959489a5597ba9104a6a7c9/12f09/9.png 148w,
 /static/d13d2bbd2959489a5597ba9104a6a7c9/e4a3f/9.png 295w,
@@ -5924,8 +5924,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/b4fc52fc43db709dc2df30b0b0cbaf3f/fcda8/1.png&quot;
         srcset=&quot;/static/b4fc52fc43db709dc2df30b0b0cbaf3f/12f09/1.png 148w,
 /static/b4fc52fc43db709dc2df30b0b0cbaf3f/e4a3f/1.png 295w,
@@ -5958,8 +5958,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;2&quot;
+        title=&quot;2&quot;
         src=&quot;/static/930b95b85ceb0836c7ba7cbffd7aaece/fcda8/2.png&quot;
         srcset=&quot;/static/930b95b85ceb0836c7ba7cbffd7aaece/12f09/2.png 148w,
 /static/930b95b85ceb0836c7ba7cbffd7aaece/e4a3f/2.png 295w,
@@ -5991,8 +5991,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;3&quot;
+        title=&quot;3&quot;
         src=&quot;/static/6cc874ad6372c4b22f5cbba473b21a63/fcda8/3.png&quot;
         srcset=&quot;/static/6cc874ad6372c4b22f5cbba473b21a63/12f09/3.png 148w,
 /static/6cc874ad6372c4b22f5cbba473b21a63/e4a3f/3.png 295w,
@@ -6024,8 +6024,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;4&quot;
+        title=&quot;4&quot;
         src=&quot;/static/6529d8c0392c207173055656c12074c5/fcda8/4.png&quot;
         srcset=&quot;/static/6529d8c0392c207173055656c12074c5/12f09/4.png 148w,
 /static/6529d8c0392c207173055656c12074c5/e4a3f/4.png 295w,
@@ -6073,8 +6073,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;5&quot;
+        title=&quot;5&quot;
         src=&quot;/static/320b435400d307cae038eb79866220e2/fcda8/5.png&quot;
         srcset=&quot;/static/320b435400d307cae038eb79866220e2/12f09/5.png 148w,
 /static/320b435400d307cae038eb79866220e2/e4a3f/5.png 295w,
@@ -6105,8 +6105,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;6&quot;
+        title=&quot;6&quot;
         src=&quot;/static/e1413fed15671404f50e697f15f7bdf7/fcda8/6.png&quot;
         srcset=&quot;/static/e1413fed15671404f50e697f15f7bdf7/12f09/6.png 148w,
 /static/e1413fed15671404f50e697f15f7bdf7/e4a3f/6.png 295w,
@@ -6138,8 +6138,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;7&quot;
+        title=&quot;7&quot;
         src=&quot;/static/9d4f78ab131184f342de1c9ca5782178/fcda8/7.png&quot;
         srcset=&quot;/static/9d4f78ab131184f342de1c9ca5782178/12f09/7.png 148w,
 /static/9d4f78ab131184f342de1c9ca5782178/e4a3f/7.png 295w,
@@ -6187,8 +6187,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;8&quot;
+        title=&quot;8&quot;
         src=&quot;/static/585cb6e7d92e30de17c3e34f41ddf1d8/fcda8/8.png&quot;
         srcset=&quot;/static/585cb6e7d92e30de17c3e34f41ddf1d8/12f09/8.png 148w,
 /static/585cb6e7d92e30de17c3e34f41ddf1d8/e4a3f/8.png 295w,
@@ -6225,8 +6225,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;9&quot;
+        title=&quot;9&quot;
         src=&quot;/static/7474fabed91883a3051478ff247918bb/fcda8/9.png&quot;
         srcset=&quot;/static/7474fabed91883a3051478ff247918bb/12f09/9.png 148w,
 /static/7474fabed91883a3051478ff247918bb/e4a3f/9.png 295w,
@@ -6262,8 +6262,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;10&quot;
+        title=&quot;10&quot;
         src=&quot;/static/9804c5e357ab2de9e09c067238a6df9e/fcda8/10.png&quot;
         srcset=&quot;/static/9804c5e357ab2de9e09c067238a6df9e/12f09/10.png 148w,
 /static/9804c5e357ab2de9e09c067238a6df9e/e4a3f/10.png 295w,
@@ -6295,8 +6295,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;11&quot;
+        title=&quot;11&quot;
         src=&quot;/static/aa07ada4a1a5ee0f42f5160232622219/fcda8/11.png&quot;
         srcset=&quot;/static/aa07ada4a1a5ee0f42f5160232622219/12f09/11.png 148w,
 /static/aa07ada4a1a5ee0f42f5160232622219/e4a3f/11.png 295w,
@@ -6331,8 +6331,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;12&quot;
+        title=&quot;12&quot;
         src=&quot;/static/b865875664d0958a8e44fa6ed884c61e/fcda8/12.png&quot;
         srcset=&quot;/static/b865875664d0958a8e44fa6ed884c61e/12f09/12.png 148w,
 /static/b865875664d0958a8e44fa6ed884c61e/e4a3f/12.png 295w,
@@ -6362,8 +6362,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;13&quot;
+        title=&quot;13&quot;
         src=&quot;/static/0912c9307ad71614e53cfc6b117ab092/fcda8/13.png&quot;
         srcset=&quot;/static/0912c9307ad71614e53cfc6b117ab092/12f09/13.png 148w,
 /static/0912c9307ad71614e53cfc6b117ab092/e4a3f/13.png 295w,
@@ -6400,8 +6400,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/fb101b0562424143e00318e37b378d33/fcda8/1.png&quot;
         srcset=&quot;/static/fb101b0562424143e00318e37b378d33/12f09/1.png 148w,
 /static/fb101b0562424143e00318e37b378d33/e4a3f/1.png 295w,
@@ -6653,8 +6653,8 @@ compile &lt;span class=&quot;token string&quot;&gt;&apos;com.google.android.ager
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jsdelivr&quot;
-        title=&quot;jsdelivr&quot;
+        alt=&quot;1&quot;
+        title=&quot;1&quot;
         src=&quot;/static/a5eeae8a41e4b3489a5a20d78a193e15/fcda8/1.png&quot;
         srcset=&quot;/static/a5eeae8a41e4b3489a5a20d78a193e15/12f09/1.png 148w,
 /static/a5eeae8a41e4b3489a5a20d78a193e15/e4a3f/1.png 295w,
