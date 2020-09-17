@@ -44,6 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p>{`— ${data.site.siteMetadata.author.name}`}</p>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -91,6 +92,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
