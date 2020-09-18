@@ -4,6 +4,7 @@ import { /*Link,*/ graphql } from "gatsby"
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+// import Comment from "../components/comment"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
@@ -44,13 +45,11 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div
+        <p
           style={{
             marginTop: rhythm(2),
           }}
-        >
-          {`— ${data.site.siteMetadata.author.name}`}
-        </div>
+        >{`— ${data.site.siteMetadata.author.name}`}</p>
         {/* <hr
           style={{
             marginBottom: rhythm(1),
@@ -87,6 +86,8 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
           </li>
         </ul>
       </nav> */}
+
+      {/* <Comment location={location} /> */}
     </Layout>
   )
 }
