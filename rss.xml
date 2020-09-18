@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Sep 2020 10:20:16 GMT</lastBuildDate><item><title><![CDATA[从 Hexo 到 Gatsby]]></title><description><![CDATA[没错，最近将博客从 Hexo 迁移到 Gatsby 了，为什么要迁移，有许多原因 喜欢折腾 最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧 既然折腾起来了，那干脆试下 Gatsby（前段时间了解到） Gatsby 相比 Hexo…]]></description><link>https://evilmouth.net/cong-hexo-dao-gatsby/</link><guid isPermaLink="false">https://evilmouth.net/cong-hexo-dao-gatsby/</guid><pubDate>Thu, 17 Sep 2020 20:42:22 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Sep 2020 15:10:39 GMT</lastBuildDate><item><title><![CDATA[从 Hexo 到 Gatsby]]></title><description><![CDATA[没错，最近将博客从 Hexo 迁移到 Gatsby 了，为什么要迁移，有许多原因 喜欢折腾 最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧 既然折腾起来了，那干脆试下 Gatsby（前段时间了解到） Gatsby 相比 Hexo…]]></description><link>https://evilmouth.net/cong-hexo-dao-gatsby/</link><guid isPermaLink="false">https://evilmouth.net/cong-hexo-dao-gatsby/</guid><pubDate>Thu, 17 Sep 2020 20:42:22 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
@@ -15,8 +15,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;2654769359&quot;
-        title=&quot;2654769359&quot;
+        alt=&quot;Lighthouse跑分&quot;
+        title=&quot;Lighthouse跑分&quot;
         src=&quot;/static/7b6952955289aff581053272274cf486/1c72d/2654769359.jpg&quot;
         srcset=&quot;/static/7b6952955289aff581053272274cf486/a80bd/2654769359.jpg 148w,
 /static/7b6952955289aff581053272274cf486/1c91a/2654769359.jpg 295w,
@@ -35,11 +35,11 @@
 &lt;li&gt;最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧&lt;/li&gt;
 &lt;li&gt;既然折腾起来了，那干脆试下 Gatsby（前段时间了解到）&lt;/li&gt;
 &lt;li&gt;Gatsby 相比 Hexo 简洁太多&lt;/li&gt;
-&lt;li&gt;看到上面那张图了吗，Gatsby 很看重 Lighthouse&lt;/li&gt;
+&lt;li&gt;上面那张图就是换了 Gatsby 之后的 Lighthouse 得分&lt;/li&gt;
 &lt;li&gt;Gatsby 用的 React，顺便也学学 React&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;还有一点，博客路径也改了，从 blog.evilmouth.net 改成 evilmouth.net/blog，为什么&lt;/p&gt;
-&lt;p&gt;前段时间把网站迁移到 Github Pages，用 CNAME 记录到域名，博客用的 blog.evilmouth.net，指向 github.io，重点来了，我手机用的联通 4G，访问 github.io 是直接无法访问此网站，在网上看到别人也在讨论，说他们移动电信也是这样，实在是太坑了。不过联通没有禁止 github.com，所以 evilmouth.net 是可以访问的，就跟不留学的时候 git clone 半天是一样的，浏览还是给你看的。。。所以干脆将个人主页和博客放到一起，用 Gatsby 加两个页也是非常容易&lt;/p&gt;
+&lt;p&gt;前段时间把网站迁移到 Github Pages，用 CNAME 记录到域名，博客用的 blog.evilmouth.net，指向 github.io，重点来了，我手机用的联通 4G，访问 github.io 是直接无法访问此网站（下面图片），在网上看到别人也在讨论，说他们移动电信也是这样，实在是太坑了。不过联通没有禁止 github.com，所以 evilmouth.net 是可以访问的，就跟不留学的时候 git clone 半天是一样的，浏览还是给你看的。。。所以干脆将个人主页和博客放到一起，用 Gatsby 加两个页也是非常容易&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
@@ -57,8 +57,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;170844&quot;
-        title=&quot;170844&quot;
+        alt=&quot;联通4G访问github.io&quot;
+        title=&quot;联通4G访问github.io&quot;
         src=&quot;/static/b972d6a816ea537ba5b341ca0d6b02f9/1c72d/170844.jpg&quot;
         srcset=&quot;/static/b972d6a816ea537ba5b341ca0d6b02f9/a80bd/170844.jpg 148w,
 /static/b972d6a816ea537ba5b341ca0d6b02f9/1c91a/170844.jpg 295w,
