@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <p
           style={{
-            marginTop: rhythm(2),
+            marginTop: rhythm(3),
           }}
         >{`— ${data.site.siteMetadata.author.name}`}</p>
         {/* <hr
