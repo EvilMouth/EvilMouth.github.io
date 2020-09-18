@@ -23,7 +23,7 @@ const Valine = () => {
 
 const Gitalk = ({ location }) => {
   const status = useScript(`//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js`)
-  const md5Js = useScript(`/scripts/md5.min.js`)
+  const md5Js = useScript(`//cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@main/static/scripts/md5.min.js`)
   if (status === "ready" && md5Js === "ready") {
     const gitalk = new window.Gitalk({
       clientID: `74a99996d02981497895`,
