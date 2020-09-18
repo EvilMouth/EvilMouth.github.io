@@ -1,15 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { /*Link,*/ graphql } from "gatsby"
 
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  // const { previous, next } = pageContext
 
   return (
     <Layout
@@ -44,18 +44,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p>{`— ${data.site.siteMetadata.author.name}`}</p>
-        <hr
+        <div
+          style={{
+            marginTop: rhythm(2),
+          }}
+        >
+          {`— ${data.site.siteMetadata.author.name}`}
+        </div>
+        {/* <hr
           style={{
             marginBottom: rhythm(1),
           }}
-        />
+        /> */}
         {/* <footer>
           <Bio />
         </footer> */}
       </article>
 
-      <nav>
+      {/* <nav>
         <ul
           style={{
             display: `flex`,
@@ -80,7 +86,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   )
 }
