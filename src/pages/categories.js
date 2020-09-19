@@ -44,7 +44,7 @@ const Categories = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle} linkTo="/blog/">
-      <SEO title="Tags" description={`All Tags Of ${siteTitle} Posts`} />
+      <SEO title="Categories" description={`All Categories Of ${siteTitle} Posts`} />
       <article>{categoriesDiv}</article>
     </Layout>
   )
