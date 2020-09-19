@@ -21,7 +21,7 @@ const Categories = ({ data, location }) => {
     categoriesMap[categories] = times
   })
 
-  // Generate The Tags UI
+  // Generate The Categories UI
   let categoriesDiv
   if (categoriesMap !== null && Object.entries(categoriesMap).length > 0) {
     categoriesDiv = (
