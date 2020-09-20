@@ -25,7 +25,7 @@ const BlogPostListTemplate = ({ pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Posts" description={`Posts Of ${authorName}'s Blog`} />
+      <SEO title="Posts" description={`All Posts Of ${authorName}'s Blog`} />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

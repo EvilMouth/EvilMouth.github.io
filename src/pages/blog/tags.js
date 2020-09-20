@@ -50,7 +50,7 @@ const Tags = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle} linkTo="/blog/">
-      <SEO title="Tags" description={`All Tags Of ${siteTitle} Posts`} />
+      <SEO title="Tags" description={`All Tags Of ${siteTitle}'s Blog Posts`} />
       <article>{tagsDiv}</article>
     </Layout>
   )
