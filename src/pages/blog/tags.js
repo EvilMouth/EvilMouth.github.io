@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-import tagStyles from "../styles/tags.module.css"
+import tagStyles from "./tags.module.css"
 
 const Tags = ({ data, location }) => {
   const siteTitle = `${data.site.siteMetadata.author.name}'s Blog`
@@ -33,7 +33,7 @@ const Tags = ({ data, location }) => {
           return (
             <Link
               key={tag}
-              to={`/tags/${tag}/`}
+              to={`/blog/tags/${tag}/`}
               style={{
                 fontSize: size,
               }}

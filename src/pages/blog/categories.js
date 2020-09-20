@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-import categoryStyles from "../styles/categories.module.css"
+import categoryStyles from "./categories.module.css"
 
 const Categories = ({ data, location }) => {
   const siteTitle = `${data.site.siteMetadata.author.name}'s Blog`
@@ -30,7 +30,7 @@ const Categories = ({ data, location }) => {
           {Object.entries(categoriesMap).map(([category, times]) => {
             return (
               <li key={category}>
-                <Link to={`/categories/${category}/`}>{category}</Link>
+                <Link to={`/blog/categories/${category}/`}>{category}</Link>
                 <span>{`(${times})`}</span>
               </li>
             )
