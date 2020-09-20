@@ -45,6 +45,13 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `remark-images-jsdelivr`,
+            options: {
+              enabled: true,
+              prefix: `https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages`,
+            },
+          },
         ],
       },
     },
