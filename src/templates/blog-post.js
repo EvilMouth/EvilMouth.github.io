@@ -87,7 +87,7 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
         </ul>
       </nav> */}
 
-      {/* <Comment location={location} /> */}
+      {/* <Comment id={post.id} location={location} /> */}
     </Layout>
   )
 }

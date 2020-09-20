@@ -21,17 +21,16 @@ const Valine = () => {
   return <div id="vcomments"></div>
 }
 
-const Gitalk = ({ location }) => {
+const Gitalk = ({ id, location }) => {
   const status = useScript(`//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js`)
-  const md5Js = useScript(`//cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@main/static/scripts/md5.min.js`)
-  if (status === "ready" && md5Js === "ready") {
+  if (status === "ready") {
     const gitalk = new window.Gitalk({
       clientID: `74a99996d02981497895`,
       clientSecret: `666acd52c84878ed4e9632a4a5d91005ed410831`,
       repo: `_posts`,
       owner: `EvilMouth`,
       admin: [`EvilMouth`],
-      id: window.md5(location.pathname),
+      id: id,
       distractionFreeMode: true,
       lang: `en`,
     })
@@ -50,7 +49,7 @@ const Gitalk = ({ location }) => {
   )
 }
 
-const Comment = ({ location }) => {
+const Comment = ({ id, location }) => {
   return (
     <div
       id="commentContainer"
@@ -59,7 +58,7 @@ const Comment = ({ location }) => {
       }}
     >
       <Valine />
-      <Gitalk location={location} />
+      <Gitalk id={id} location={location} />
     </div>
   )
 }
