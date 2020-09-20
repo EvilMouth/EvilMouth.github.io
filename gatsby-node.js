@@ -14,11 +14,15 @@ exports.createPages = async ({ graphql, actions }) => {
         ) {
           edges {
             node {
+              excerpt
               fields {
                 slug
               }
               frontmatter {
+                date(formatString: "MMMM DD, YYYY")
                 title
+                tags
+                categories
               }
             }
           }
@@ -46,6 +50,49 @@ exports.createPages = async ({ graphql, actions }) => {
         previous,
         next,
       },
+    })
+  })
+
+  // Create TagPosts And CategoryPosts Pages
+  const blogPostList = path.resolve(`./src/templates/blog-post-list.js`)
+  const tagMapPosts = {}
+  const categoryMapPosts = {}
+  posts.forEach(post => {
+    const tags = post.node.frontmatter.tags
+    if (tags !== null && tags.length > 0) {
+      tags.forEach(tag => {
+        const tagPost = tagMapPosts[tag]
+        if (tagPost === undefined) tagMapPosts[tag] = [post]
+        else tagPost.push(post)
+      })
+      Object.entries(tagMapPosts).forEach(([tag, posts]) => {
+        const slug = `/blog/tags/${tag}/`
+        createPage({
+          path: slug,
+          component: blogPostList,
+          context: {
+            slug,
+            posts,
+          },
+        })
+      })
+    }
+    const categories = post.node.frontmatter.categories
+    if (categories !== null) {
+      const categoryPosts = categoryMapPosts[categories]
+      if (categoryPosts === undefined) categoryMapPosts[categories] = [post]
+      else categoryPosts.push(post)
+    }
+    Object.entries(categoryMapPosts).forEach(([tag, posts]) => {
+      const slug = `/blog/categories/${tag}/`
+      createPage({
+        path: slug,
+        component: blogPostList,
+        context: {
+          slug,
+          posts,
+        },
+      })
     })
   })
 }
