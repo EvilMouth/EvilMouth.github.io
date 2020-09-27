@@ -30,12 +30,12 @@ module.exports = ({ markdownAST }, pluginOptions) => {
         let html = node.value
         const found = html.match(/\/static\/.+?(\.jpg|\.jpeg|\.png)/g)
         if (found === null) return
-        found.forEach((url, index) => {
+        Array.from(new Set(found)).forEach((url, index) => {
           const jsdelivrUrl = prefix + url
           if (index === 0) {
             console.info(jsdelivrUrl)
           }
-          html = html.replace(url, jsdelivrUrl)
+          html = html.replace(new RegExp(url, "g"), jsdelivrUrl)
         })
         node.value = html
       }
