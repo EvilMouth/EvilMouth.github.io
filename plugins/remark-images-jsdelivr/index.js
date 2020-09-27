@@ -18,8 +18,8 @@ module.exports = ({ markdownAST }, pluginOptions) => {
       )
         return
       const jsdelivrUrl = prefix + url
-      node.url = jsdelivrUrl
       console.info(jsdelivrUrl)
+      node.url = jsdelivrUrl
     })
 
     // deal with `gatsby-remark-images` plugin
@@ -27,16 +27,17 @@ module.exports = ({ markdownAST }, pluginOptions) => {
       const { url } = node
       if (!url) return
       if (url.endsWith("jpg") || url.endsWith("jpeg") || url.endsWith("png")) {
-        const { value } = node
-        const found = value.match(/\/static\/.+(\.jpg|\.png)/g)
+        let html = node.value
+        const found = html.match(/\/static\/.+(\.jpg|\.jpeg|\.png)/g)
         if (found === null) return
         found.forEach((url, index) => {
           const jsdelivrUrl = prefix + url
-          node.value = value.replace(url, jsdelivrUrl)
           if (index === 0) {
             console.info(jsdelivrUrl)
           }
+          html = html.replace(url, jsdelivrUrl)
         })
+        node.value = html
       }
     })
   }
