@@ -3,14 +3,14 @@
 <!-- More -->
 <h2>添加 maven 插件</h2>
 <p>在根<code class="language-text">build.gradle</code>配置插件</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">buildscript {
-  dependencies {
-    classpath &#39;com.github.dcendents:android-maven-gradle-plugin:1.5&#39; // Add this line</code></pre></div>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">buildscript <span class="token punctuation">{</span>
+  dependencies <span class="token punctuation">{</span>
+    classpath <span class="token string">'com.github.dcendents:android-maven-gradle-plugin:1.5'</span> <span class="token comment">// Add this line</span></code></pre></div>
 <h2>配置 library</h2>
 <p>在<code class="language-text">library</code>的<code class="language-text">build.gradle</code>添加</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">apply plugin: &#39;com.github.dcendents.android-maven&#39;
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">apply plugin<span class="token punctuation">:</span> <span class="token string">'com.github.dcendents.android-maven'</span>
 
- group=&#39;com.github.YourUsername&#39;</code></pre></div>
+ group<span class="token operator">=</span><span class="token string">'com.github.YourUsername'</span></code></pre></div>
 <h2>创建一个 release</h2>
 <p>为你的<code class="language-text">Github</code>仓库创建一个<code class="language-text">release</code>
 <span
@@ -109,16 +109,16 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/68c1a4
   </a>
     </span></p>
 <h2>拉依赖</h2>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">allprojects {
- repositories {
-    jcenter()
-    maven { url &quot;https://jitpack.io&quot; }
- }
-}</code></pre></div>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">allprojects <span class="token punctuation">{</span>
+ repositories <span class="token punctuation">{</span>
+    <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    maven <span class="token punctuation">{</span> url <span class="token string gstring">"https://jitpack.io"</span> <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>最后</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">dependencies {
-    compile &#39;com.github.YourUsername:YourProjectName:YourProjectVersion&#39;
-}</code></pre></div></section><p style="margin-top:5.25rem">— Evil Mouth</p></article></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">dependencies <span class="token punctuation">{</span>
+    compile <span class="token string">'com.github.YourUsername:YourProjectName:YourProjectVersion'</span>
+<span class="token punctuation">}</span></code></pre></div></section><p style="margin-top:5.25rem">— Evil Mouth</p></article></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   
   if(true) {

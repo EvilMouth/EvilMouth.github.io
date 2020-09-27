@@ -123,157 +123,157 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/10ce84
     </span></p>
 <h2>添加插件</h2>
 <p>为根目录的<code class="language-text">build.gradle</code>的<code class="language-text">dependencies</code>添加<code class="language-text">bintray</code>插件</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">classpath &#39;com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3&#39;
-classpath &#39;com.github.dcendents:android-maven-gradle-plugin:1.5&#39;</code></pre></div>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">classpath <span class="token string">'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'</span>
+classpath <span class="token string">'com.github.dcendents:android-maven-gradle-plugin:1.5'</span></code></pre></div>
 <h2>修改 module</h2>
 <p>修改你想发布的<code class="language-text">library</code>级别的 module 的<code class="language-text">build.gradle</code>，直接在后面添加如下代码</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">ext {
-    bintrayRepo = &#39;maven&#39;//上面创建`Repository`的是`Name`
-    bintrayName = &#39;damon&#39;//你想要发布的仓库的名称
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">ext <span class="token punctuation">{</span>
+    bintrayRepo <span class="token operator">=</span> <span class="token string">'maven'</span><span class="token comment">//上面创建`Repository`的是`Name`</span>
+    bintrayName <span class="token operator">=</span> <span class="token string">'damon'</span><span class="token comment">//你想要发布的仓库的名称</span>
 
-    publishedGroupId = &#39;com.zyhang&#39;//groupId，跟下面的artifact组合
-    artifact = &#39;damon&#39;//artifact，跟上面的groupId组合，到时候别人拉依赖就是`compile &#39;com.zyhang:damon:1.0.0&#39;`
+    publishedGroupId <span class="token operator">=</span> <span class="token string">'com.zyhang'</span><span class="token comment">//groupId，跟下面的artifact组合</span>
+    artifact <span class="token operator">=</span> <span class="token string">'damon'</span><span class="token comment">//artifact，跟上面的groupId组合，到时候别人拉依赖就是`compile 'com.zyhang:damon:1.0.0'`</span>
 
-    siteUrl = &#39;https://github.com/izyhang/Damon&#39;//项目地址
-    gitUrl = &#39;https://github.com/izyhang/Damon.git&#39;//项目git地址
+    siteUrl <span class="token operator">=</span> <span class="token string">'https://github.com/izyhang/Damon'</span><span class="token comment">//项目地址</span>
+    gitUrl <span class="token operator">=</span> <span class="token string">'https://github.com/izyhang/Damon.git'</span><span class="token comment">//项目git地址</span>
 
-    libraryVersion = &#39;1.0.0&#39;//版本号
-    libraryName = &#39;Damon&#39;//名称
-    libraryDescription = &#39;a android mvp framework based on rxjava rxlifecycle&#39;//介绍
+    libraryVersion <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token comment">//版本号</span>
+    libraryName <span class="token operator">=</span> <span class="token string">'Damon'</span><span class="token comment">//名称</span>
+    libraryDescription <span class="token operator">=</span> <span class="token string">'a android mvp framework based on rxjava rxlifecycle'</span><span class="token comment">//介绍</span>
 
-    developerId = &#39;zyhang&#39;//开发者id
-    developerName = &#39;zyhang&#39;//开发者名称
-    developerEmail = &#39;zyhang4502@gmail.com&#39;//开发者邮箱
+    developerId <span class="token operator">=</span> <span class="token string">'zyhang'</span><span class="token comment">//开发者id</span>
+    developerName <span class="token operator">=</span> <span class="token string">'zyhang'</span><span class="token comment">//开发者名称</span>
+    developerEmail <span class="token operator">=</span> <span class="token string">'zyhang4502@gmail.com'</span><span class="token comment">//开发者邮箱</span>
 
-    //以下不用改动
-    licenseName = &#39;The Apache Software License, Version 2.0&#39;
-    licenseUrl = &#39;http://www.apache.org/licenses/LICENSE-2.0.txt&#39;
-    allLicenses = [&quot;Apache-2.0&quot;]
-}
+    <span class="token comment">//以下不用改动</span>
+    licenseName <span class="token operator">=</span> <span class="token string">'The Apache Software License, Version 2.0'</span>
+    licenseUrl <span class="token operator">=</span> <span class="token string">'http://www.apache.org/licenses/LICENSE-2.0.txt'</span>
+    allLicenses <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string gstring">"Apache-2.0"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
 
-//这两句是编译上传配置
-apply from:&#39;../gradle/install.gradle&#39;
-apply from:&#39;../gradle/bintray.gradle&#39;</code></pre></div>
+<span class="token comment">//这两句是编译上传配置</span>
+apply from<span class="token punctuation">:</span><span class="token string">'../gradle/install.gradle'</span>
+apply from<span class="token punctuation">:</span><span class="token string">'../gradle/bintray.gradle'</span></code></pre></div>
 <h2>配置用户信息和 API key</h2>
 <p>打开项目的<code class="language-text">local.properties</code>文件并增加</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">bintray.user=zyhang//刚才`Username
+<div class="gatsby-highlight" data-language="none"><pre class="language-none"><code class="language-none">bintray.user=zyhang//刚才`Username
 bintray.apikey=*********************************//刚才的API key</code></pre></div>
 <h2>编译上传配置</h2>
 <p>在项目的<code class="language-text">gradle</code>文件夹新建两个文件<code class="language-text">install.gradle</code>和<code class="language-text">bintray.gradle</code>，其内容如下</p>
 <p><code class="language-text">install.gradle</code></p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">apply plugin: &#39;com.github.dcendents.android-maven&#39;
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">apply plugin<span class="token punctuation">:</span> <span class="token string">'com.github.dcendents.android-maven'</span>
 
-group = publishedGroupId                               // Maven Group ID for the artifact
+group <span class="token operator">=</span> publishedGroupId                               <span class="token comment">// Maven Group ID for the artifact</span>
 
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging &#39;aar&#39;
+install <span class="token punctuation">{</span>
+    repositories<span class="token punctuation">.</span>mavenInstaller <span class="token punctuation">{</span>
+        <span class="token comment">// This generates POM.xml with proper parameters</span>
+        pom <span class="token punctuation">{</span>
+            project <span class="token punctuation">{</span>
+                packaging <span class="token string">'aar'</span>
                 groupId publishedGroupId
                 artifactId artifact
 
-                // Add your description here
+                <span class="token comment">// Add your description here</span>
                 name libraryName
                 description libraryDescription
                 url siteUrl
 
-                // Set your license
-                licenses {
-                    license {
+                <span class="token comment">// Set your license</span>
+                licenses <span class="token punctuation">{</span>
+                    license <span class="token punctuation">{</span>
                         name licenseName
                         url licenseUrl
-                    }
-                }
-                developers {
-                    developer {
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                developers <span class="token punctuation">{</span>
+                    developer <span class="token punctuation">{</span>
                         id developerId
                         name developerName
                         email developerEmail
-                    }
-                }
-                scm {
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                scm <span class="token punctuation">{</span>
                     connection gitUrl
                     developerConnection gitUrl
                     url siteUrl
-                }
-            }
-        }
-    }
-}</code></pre></div>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p><code class="language-text">bintray.gradle</code></p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">apply plugin: &#39;com.jfrog.bintray&#39;
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">apply plugin<span class="token punctuation">:</span> <span class="token string">'com.jfrog.bintray'</span>
 
-version = libraryVersion
+version <span class="token operator">=</span> libraryVersion
 
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = &#39;sources&#39;
-}
+task <span class="token function">sourcesJar</span><span class="token punctuation">(</span>type<span class="token punctuation">:</span> Jar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    from android<span class="token punctuation">.</span>sourceSets<span class="token punctuation">.</span>main<span class="token punctuation">.</span>java<span class="token punctuation">.</span>srcDirs
+    classifier <span class="token operator">=</span> <span class="token string">'sources'</span>
+<span class="token punctuation">}</span>
 
-artifacts {
+artifacts <span class="token punctuation">{</span>
     archives sourcesJar
-}
+<span class="token punctuation">}</span>
 
-android.libraryVariants.all { variant -&gt;
-    println variant.javaCompile.classpath.files
-    if(variant.name == &#39;release&#39;) {
-        task(&quot;generate${variant.name.capitalize()}Javadoc&quot;, type: Javadoc) {
-            // title = &#39;&#39;
-            // description = &#39;&#39;
-            source = variant.javaCompile.source
-            classpath = files(variant.javaCompile.classpath.files, project.android.getBootClasspath())
-            options {
-                encoding &quot;utf-8&quot;
-                links &quot;http://docs.oracle.com/javase/7/docs/api/&quot;
-                linksOffline &quot;http://d.android.com/reference&quot;, &quot;${android.sdkDirectory}/docs/reference&quot;
-            }
-            exclude &#39;**/BuildConfig.java&#39;
-            exclude &#39;**/R.java&#39;
-        }
-        task(&quot;javadoc${variant.name.capitalize()}Jar&quot;, type: Jar, dependsOn: &quot;generate${variant.name.capitalize()}Javadoc&quot;) {
-            classifier = &#39;javadoc&#39;
-            from tasks.getByName(&quot;generate${variant.name.capitalize()}Javadoc&quot;).destinationDir
-        }
-        artifacts {
-            archives tasks.getByName(&quot;javadoc${variant.name.capitalize()}Jar&quot;)
-        }
-    }
-}
+android<span class="token punctuation">.</span>libraryVariants<span class="token punctuation">.</span>all <span class="token punctuation">{</span> variant <span class="token operator">-></span>
+    println variant<span class="token punctuation">.</span>javaCompile<span class="token punctuation">.</span>classpath<span class="token punctuation">.</span>files
+    <span class="token keyword">if</span><span class="token punctuation">(</span>variant<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">'release'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">task</span><span class="token punctuation">(</span><span class="token string gstring">"generate<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variant<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>Javadoc"</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> Javadoc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// title = ''</span>
+            <span class="token comment">// description = ''</span>
+            source <span class="token operator">=</span> variant<span class="token punctuation">.</span>javaCompile<span class="token punctuation">.</span>source
+            classpath <span class="token operator">=</span> <span class="token function">files</span><span class="token punctuation">(</span>variant<span class="token punctuation">.</span>javaCompile<span class="token punctuation">.</span>classpath<span class="token punctuation">.</span>files<span class="token punctuation">,</span> project<span class="token punctuation">.</span>android<span class="token punctuation">.</span><span class="token function">getBootClasspath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            options <span class="token punctuation">{</span>
+                encoding <span class="token string gstring">"utf-8"</span>
+                links <span class="token string gstring">"http://docs.oracle.com/javase/7/docs/api/"</span>
+                linksOffline <span class="token string gstring">"http://d.android.com/reference"</span><span class="token punctuation">,</span> <span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>android<span class="token punctuation">.</span>sdkDirectory<span class="token punctuation">}</span></span>/docs/reference"</span>
+            <span class="token punctuation">}</span>
+            exclude <span class="token string">'**/BuildConfig.java'</span>
+            exclude <span class="token string">'**/R.java'</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">task</span><span class="token punctuation">(</span><span class="token string gstring">"javadoc<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variant<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>Jar"</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> Jar<span class="token punctuation">,</span> dependsOn<span class="token punctuation">:</span> <span class="token string gstring">"generate<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variant<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>Javadoc"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            classifier <span class="token operator">=</span> <span class="token string">'javadoc'</span>
+            from tasks<span class="token punctuation">.</span><span class="token function">getByName</span><span class="token punctuation">(</span><span class="token string gstring">"generate<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variant<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>Javadoc"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>destinationDir
+        <span class="token punctuation">}</span>
+        artifacts <span class="token punctuation">{</span>
+            archives tasks<span class="token punctuation">.</span><span class="token function">getByName</span><span class="token punctuation">(</span><span class="token string gstring">"javadoc<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variant<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>Jar"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-// Bintray
-Properties properties = new Properties()
-properties.load(project.rootProject.file(&#39;local.properties&#39;).newDataInputStream())
+<span class="token comment">// Bintray</span>
+Properties properties <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Properties</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+properties<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>project<span class="token punctuation">.</span>rootProject<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">'local.properties'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">newDataInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-bintray {
-    user = properties.getProperty(&quot;bintray.user&quot;)
-    key = properties.getProperty(&quot;bintray.apikey&quot;)
+bintray <span class="token punctuation">{</span>
+    user <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string gstring">"bintray.user"</span><span class="token punctuation">)</span>
+    key <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string gstring">"bintray.apikey"</span><span class="token punctuation">)</span>
 
-    configurations = [&#39;archives&#39;]
-    pkg {
-        repo = bintrayRepo
-        name = bintrayName
-        desc = libraryDescription
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = allLicenses
-        publish = true
-        publicDownloadNumbers = true
-        version {
-            desc = libraryDescription
-            gpg {
-                sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = properties.getProperty(&quot;bintray.gpg.password&quot;)
-                //Optional. The passphrase for GPG signing&#39;
-            }
-        }
-    }
-}</code></pre></div>
+    configurations <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'archives'</span><span class="token punctuation">]</span>
+    pkg <span class="token punctuation">{</span>
+        repo <span class="token operator">=</span> bintrayRepo
+        name <span class="token operator">=</span> bintrayName
+        desc <span class="token operator">=</span> libraryDescription
+        websiteUrl <span class="token operator">=</span> siteUrl
+        vcsUrl <span class="token operator">=</span> gitUrl
+        licenses <span class="token operator">=</span> allLicenses
+        publish <span class="token operator">=</span> <span class="token boolean">true</span>
+        publicDownloadNumbers <span class="token operator">=</span> <span class="token boolean">true</span>
+        version <span class="token punctuation">{</span>
+            desc <span class="token operator">=</span> libraryDescription
+            gpg <span class="token punctuation">{</span>
+                sign <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token comment">//Determines whether to GPG sign the files. The default is false</span>
+                passphrase <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string gstring">"bintray.gpg.password"</span><span class="token punctuation">)</span>
+                <span class="token comment">//Optional. The passphrase for GPG signing'</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <h2>上传</h2>
 <p>配置完成，准备上传到<code class="language-text">bintray</code>
 直接使用<code class="language-text">Android Studio</code>的<code class="language-text">Terminal</code></p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">./gradlew install
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">./gradlew <span class="token function">install</span>
 ./gradlew bintrayupload</code></pre></div>
 <p>如果遇到<code class="language-text">permission denied: ./gradlew</code>
 可以先执行<code class="language-text">chmod +x gradlew</code></p>
@@ -312,17 +312,17 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/bc2aaa
     </span></p>
 <h2>添加到 jcenter</h2>
 <p>虽然现在你的<code class="language-text">library</code>已经发布了，但是也只是发布在你个人的<code class="language-text">Maven</code>仓库中，如果别人要添加此依赖，还必须定义你的仓库的地址，如下</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">repositories {
-    maven {
-        url  &quot;http://dl.bintray.com/zyhang/maven&quot;//此地址可以在`package`页的`SET ME UP`里面找到
-    }
-}
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">repositories <span class="token punctuation">{</span>
+    maven <span class="token punctuation">{</span>
+        url  <span class="token string gstring">"http://dl.bintray.com/zyhang/maven"</span><span class="token comment">//此地址可以在`package`页的`SET ME UP`里面找到</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-...
+<span class="token punctuation">...</span>
 
-dependencies {
-    compile &#39;com.zyhang:damon:1.0.0&#39;
-}</code></pre></div>
+dependencies <span class="token punctuation">{</span>
+    compile <span class="token string">'com.zyhang:damon:1.0.0'</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>但是这样就与我们的预期不一致了，我们是想要一句话直接调用，不需要再去定义什么仓库地址，所以此时你只需要同步你的仓库到<code class="language-text">jcenter</code>就行了
 <span
       class="gatsby-resp-image-wrapper"

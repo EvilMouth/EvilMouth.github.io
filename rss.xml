@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Sep 2020 16:15:17 GMT</lastBuildDate><item><title><![CDATA[从 Hexo 到 Gatsby]]></title><description><![CDATA[没错，最近将博客从 Hexo 迁移到 Gatsby 了，为什么要迁移，有许多原因 喜欢折腾 最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧 既然折腾起来了，那干脆试下 Gatsby（前段时间了解到） Gatsby 相比 Hexo…]]></description><link>https://evilmouth.net/cong-hexo-dao-gatsby/</link><guid isPermaLink="false">https://evilmouth.net/cong-hexo-dao-gatsby/</guid><pubDate>Thu, 17 Sep 2020 20:42:22 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Sep 2020 07:37:16 GMT</lastBuildDate><item><title><![CDATA[从 Hexo 到 Gatsby]]></title><description><![CDATA[没错，最近将博客从 Hexo 迁移到 Gatsby 了，为什么要迁移，有许多原因 喜欢折腾 最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧 既然折腾起来了，那干脆试下 Gatsby（前段时间了解到） Gatsby 相比 Hexo…]]></description><link>https://evilmouth.net/cong-hexo-dao-gatsby/</link><guid isPermaLink="false">https://evilmouth.net/cong-hexo-dao-gatsby/</guid><pubDate>Thu, 17 Sep 2020 20:42:22 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
@@ -2023,9 +2023,8 @@ bottomNavigationBar&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt
 &lt;h2&gt;再次思考&lt;/h2&gt;
 &lt;p&gt;虽然利用 Transform 可以解决反射的问题，但无疑也带来了一个问题，就是项目协作上，其他人不了解的话会很奇怪。我的做法是在 $$ARouter$$Autowired 类加了行注释，起码别人在看这个类的时候能知道什么时候会 inject。
 至于怎么加这行注释，就靠各位发挥了&lt;/p&gt;
-&lt;p&gt;本项目例子已开源&lt;a href=&quot;https://github.com/izyhang/ARouter-AutowiredTransform&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[支付宝小程序指定页面跳转]]></title><description><![CDATA[支付宝小程序支持从外部调起，具体做法是通过，如下 appId 是小程序唯一 Id pagePath 是页面路径，也就是本文要讲的，不带则跳首页 params 是额外参数 更多信息请前往官网
-https://opensupport.alipay.com/support…]]></description><link>https://evilmouth.net/alipay-tinyapp-zhi-ding-ye-mian-tiao-zhuan/</link><guid isPermaLink="false">https://evilmouth.net/alipay-tinyapp-zhi-ding-ye-mian-tiao-zhuan/</guid><pubDate>Wed, 11 Mar 2020 13:25:37 GMT</pubDate><content:encoded>&lt;p&gt;支付宝小程序支持从外部调起，具体做法是通过&lt;code class=&quot;language-text&quot;&gt;scheme&lt;/code&gt;，如下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;alipays://platformapi/startapp?appId=[appId]&amp;amp;page=[pagePath]&amp;amp;query=[params]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;本项目例子已开源&lt;a href=&quot;https://github.com/izyhang/ARouter-AutowiredTransform&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[支付宝小程序指定页面跳转]]></title><description><![CDATA[支付宝小程序支持从外部调起，具体做法是通过，如下 alipays://platformapi/startapp?appId=appId&page=pagePath&query=params appId 是小程序唯一 Id pagePath…]]></description><link>https://evilmouth.net/alipay-tinyapp-zhi-ding-ye-mian-tiao-zhuan/</link><guid isPermaLink="false">https://evilmouth.net/alipay-tinyapp-zhi-ding-ye-mian-tiao-zhuan/</guid><pubDate>Wed, 11 Mar 2020 13:25:37 GMT</pubDate><content:encoded>&lt;p&gt;支付宝小程序支持从外部调起，具体做法是通过&lt;code class=&quot;language-text&quot;&gt;scheme&lt;/code&gt;，如下&lt;/p&gt;
+&lt;p&gt;alipays://platformapi/startapp?appId=[appId]&amp;#x26;page=[pagePath]&amp;#x26;query=[params]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;appId 是小程序唯一 Id&lt;/li&gt;
 &lt;li&gt;pagePath 是页面路径，也就是本文要讲的，不带则跳首页&lt;/li&gt;
@@ -2212,48 +2211,48 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/17896d
 &lt;ul&gt;
 &lt;li&gt;将下方代码添加到 library module 的 build.gradle 文件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;apply plugin: &amp;#39;maven-publish&amp;#39; // 添加到library build.gradle的最上面
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;apply plugin&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;maven-publish&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 添加到library build.gradle的最上面&lt;/span&gt;
 
-def githubProperties = new Properties()
-githubProperties.load(new FileInputStream(rootProject.file(&amp;quot;github.properties&amp;quot;)))
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; githubProperties &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Properties&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+githubProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;FileInputStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rootProject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;github.properties&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-def getVersionName = { -&amp;gt;
- return &amp;quot;1.0.2&amp;quot; // 仓库版本
-}
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; getVersionName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;1.0.2&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 仓库版本&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-def getArtificatId = { -&amp;gt;
- return &amp;quot;sampleAndroidLib&amp;quot; // 仓库Id
-}
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; getArtificatId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt;
+ &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;sampleAndroidLib&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 仓库Id&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-publishing {
- publications {
-   bar(MavenPublication) {
-      groupId &amp;#39;com.enefce.libraries&amp;#39; // 仓库组Id
-      artifactId getArtificatId()
-      version getVersionName()
-      artifact(&amp;quot;$buildDir/outputs/aar/${getArtificatId()}-release.aar&amp;quot;)
-    }
- }
+publishing &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ publications &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token function&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;MavenPublication&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      groupId &lt;span class=&quot;token string&quot;&gt;&apos;com.enefce.libraries&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 仓库组Id&lt;/span&gt;
+      artifactId &lt;span class=&quot;token function&quot;&gt;getArtificatId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      version &lt;span class=&quot;token function&quot;&gt;getVersionName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token function&quot;&gt;artifact&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;buildDir&lt;/span&gt;/outputs/aar/&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getArtificatId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;-release.aar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-repositories {
-        maven {
-               name = &amp;quot;GitHubPackages&amp;quot;
-        /** Configure path of your package repository on Github
+repositories &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        maven &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+               name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;GitHubPackages&quot;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;/** Configure path of your package repository on Github
          ** GITHUB_USERID替换成你的GitHub账户Id
          ** REPOSITORY替换成你的项目名称
-        */
- url = uri(&amp;quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&amp;quot;)
-credentials {
-        /** Create github.properties in root project folder file with
+        */&lt;/span&gt;
+ url &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;uri&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+credentials &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;/** Create github.properties in root project folder file with
          ** gpr.usr=GITHUB_USER_ID &amp;amp; gpr.key=PERSONAL_ACCESS_TOKEN
-         ** Set env variable GPR_USER &amp;amp; GPR_API_KEY if not adding a properties file**/
+         ** Set env variable GPR_USER &amp;amp; GPR_API_KEY if not adding a properties file**/&lt;/span&gt;
 
-         username = githubProperties[&amp;#39;gpr.usr&amp;#39;] ?: System.getenv(&amp;quot;GPR_USER&amp;quot;)
-         password = githubProperties[&amp;#39;gpr.key&amp;#39;] ?: System.getenv(&amp;quot;GPR_API_KEY&amp;quot;)
-      }
-    }
-  }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+         username &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; githubProperties&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gpr.usr&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?:&lt;/span&gt; System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getenv&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;GPR_USER&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+         password &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; githubProperties&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;gpr.key&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?:&lt;/span&gt; System&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getenv&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;GPR_API_KEY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;Step 4 - 执行发布&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;在执行发布之前需要确保编译过，也就是&lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt;命令，并能在&lt;code class=&quot;language-text&quot;&gt;build/outputs/aar/&lt;/code&gt;路径找到编译后的 aar 文件&lt;/p&gt;
@@ -2309,29 +2308,29 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/e9386d
 &lt;ul&gt;
 &lt;li&gt;将下方代码添加到根 build.gradle 文件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;allprojects {
-    repositories {
-        maven {
-          name = &amp;quot;GitHubPackages&amp;quot;
-          /**
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;allprojects &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repositories &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        maven &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;GitHubPackages&quot;&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;/**
           ** GITHUB_USERID替换成刚才发布包的GitHub账号Id
           ** REPOSITORY替换成刚才发布包的项目名称
-          */
-          url = uri(&amp;quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&amp;quot;)
-        }
-    }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+          */&lt;/span&gt;
+          url &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;uri&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;添加依赖到 app.module 文件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;dependencies {
-  implementation &amp;#39;com.example:package&amp;#39;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;dependencies &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  implementation &lt;span class=&quot;token string&quot;&gt;&apos;com.example:package&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;同步&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Part 3 - 便携发布&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;apply from: &amp;#39;https://raw.githubusercontent.com/izyhang/GitHub-Packages-Publish/master/publish.gradle&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[前前前后后后]]></title><description><![CDATA[. 前言 这两个星期是我最完整的一次全栈开发经历，前端，后端，服务器，域名。虽然之前也搭过服务器（本博客网站），但是这次也遇到了些许问题，包括、、等等，让我慢慢一一道来 eggjs…]]></description><link>https://evilmouth.net/qianqianqianhouhouhou/</link><guid isPermaLink="false">https://evilmouth.net/qianqianqianhouhouhou/</guid><pubDate>Sat, 29 Feb 2020 19:21:34 GMT</pubDate><content:encoded>&lt;p&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;apply from&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://raw.githubusercontent.com/izyhang/GitHub-Packages-Publish/master/publish.gradle&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[前前前后后后]]></title><description><![CDATA[. 前言 这两个星期是我最完整的一次全栈开发经历，前端，后端，服务器，域名。虽然之前也搭过服务器（本博客网站），但是这次也遇到了些许问题，包括、、等等，让我慢慢一一道来 eggjs…]]></description><link>https://evilmouth.net/qianqianqianhouhouhou/</link><guid isPermaLink="false">https://evilmouth.net/qianqianqianhouhouhou/</guid><pubDate>Sat, 29 Feb 2020 19:21:34 GMT</pubDate><content:encoded>&lt;p&gt;.&lt;/p&gt;
 &lt;!-- More --&gt;
 &lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;这两个星期是我最完整的一次全栈开发经历，前端&lt;code class=&quot;language-text&quot;&gt;vue&lt;/code&gt;，后端&lt;code class=&quot;language-text&quot;&gt;eggjs&lt;/code&gt;，服务器&lt;code class=&quot;language-text&quot;&gt;淘宝&lt;/code&gt;，域名&lt;code class=&quot;language-text&quot;&gt;namecheap&lt;/code&gt;。虽然之前也搭过服务器（本博客网站），但是这次也遇到了些许问题，包括&lt;code class=&quot;language-text&quot;&gt;eggjs&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;sequelize&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;Github Actions&lt;/code&gt;等等，让我慢慢一一道来&lt;/p&gt;
@@ -2833,9 +2832,9 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/d96cf7
       &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; processor will generate a correct implementation.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;之所以报错就是找不到这个类，可以看到这里是通过&lt;code class=&quot;language-text&quot;&gt;Class.forName&lt;/code&gt;去查找的，既然找不到，说明很可能就是我一开始想的，被混淆了，赶紧打开&lt;code class=&quot;language-text&quot;&gt;mapping.txt&lt;/code&gt;看下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;com.bumptech.glide.GeneratedAppGlideModuleImpl -&amp;gt; gi:&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;com.bumptech.glide.GeneratedAppGlideModuleImpl -&gt; gi:&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;果然。。。那就加个混淆&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;-keep class com.bumptech.glide.GeneratedAppGlideModuleImpl { *; }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;-keep class com.bumptech.glide.GeneratedAppGlideModuleImpl { *; }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;搞定，正常运行&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AndroidX TabLayout点击效果兼容问题]]></title><description><![CDATA[近期升级了一波，发现原先取消掉的点击阴影效果又出现了，以为是改了主题遍翻了翻改动，发现并没有可疑的修改导致，最后在源码里面发现真凶！ 0x00 support-27.1.1 此前的点击效果是通过设置进行取消 0x01 support-28.0.0 升级到 28.0.…]]></description><link>https://evilmouth.net/androidx-tablayout-ripple/</link><guid isPermaLink="false">https://evilmouth.net/androidx-tablayout-ripple/</guid><pubDate>Wed, 24 Oct 2018 14:08:49 GMT</pubDate><content:encoded>&lt;p&gt;近期升级了一波&lt;code class=&quot;language-text&quot;&gt;AndroidX&lt;/code&gt;，发现原先取消掉的&lt;code class=&quot;language-text&quot;&gt;TabLayout&lt;/code&gt;点击阴影效果又出现了，以为是改了主题遍翻了翻&lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt;改动，发现并没有可疑的修改导致，最后在源码里面发现真凶！&lt;/p&gt;
 &lt;!-- More --&gt;
 &lt;h2&gt;0x00 support-27.1.1&lt;/h2&gt;
@@ -5098,15 +5097,15 @@ seekBar&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h3&gt;monkey.script&lt;/h3&gt;
 &lt;p&gt;monkey 是 Android 一个压力测试工具，使用方法以及常用命令可以看官网&lt;a href=&quot;https://developer.android.com/studio/test/monkey.htmlhttps://developer.android.com/studio/test/monkey.html&quot;&gt;https://developer.android.com/studio/test/monkey.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这里要讲的是一个隐藏功能&lt;code class=&quot;language-text&quot;&gt;monkey.script&lt;/code&gt;，可以直接新建这个文件，编辑一堆命令，并保存到手机，最后执行&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;adb shell monkey -f filePath 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;adb shell monkey -f filePath &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;具体&lt;code class=&quot;language-text&quot;&gt;monkey.script&lt;/code&gt;文件编写如下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type = user
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;type = user
 count = 1
 speed = 500
-start data &amp;gt;&amp;gt;
+start data &gt;&gt;
 //这里开始你的表演(自定义命令)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;自定义命令有(详情可以看&lt;a href=&quot;http://www.jianshu.com/p/85454be8424f&quot;&gt;http://www.jianshu.com/p/85454be8424f&lt;/a&gt;)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;LaunchActivity ( pkg_name , act_name )
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;LaunchActivity ( pkg_name , act_name )
 UserWait ( sleepTime )
 DispatchPointer
 DispatchKey
@@ -5114,12 +5113,12 @@ DispatchFlip ( keyboardOpen )
 DispatchString( input )
 ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;还有这个&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;adb shell input tap 50 250 //点击屏幕坐标(50,250)
-adb shell inpput swipe 50 250 250 250 500 //滑动
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;adb shell input tap &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;250&lt;/span&gt; //点击屏幕坐标&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;50,250&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+adb shell inpput swipe &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;250&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;250&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;250&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;500&lt;/span&gt; //滑动
 adb shell input text abd //输入abc
 adb shell input keyevent keyCode //点击功能键&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;功能键表如下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;KEYCODE_UNKNOWN=0;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;KEYCODE_UNKNOWN=0;
 
 KEYCODE_SOFT_LEFT=1;
 
@@ -5309,14 +5308,14 @@ KEYCODE_MUTE=91;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><i
 &lt;!-- More --&gt;
 &lt;h2&gt;添加 maven 插件&lt;/h2&gt;
 &lt;p&gt;在根&lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt;配置插件&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;buildscript {
-  dependencies {
-    classpath &amp;#39;com.github.dcendents:android-maven-gradle-plugin:1.5&amp;#39; // Add this line&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;buildscript &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  dependencies &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    classpath &lt;span class=&quot;token string&quot;&gt;&apos;com.github.dcendents:android-maven-gradle-plugin:1.5&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Add this line&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;配置 library&lt;/h2&gt;
 &lt;p&gt;在&lt;code class=&quot;language-text&quot;&gt;library&lt;/code&gt;的&lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt;添加&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;apply plugin: &amp;#39;com.github.dcendents.android-maven&amp;#39;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;apply plugin&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;com.github.dcendents.android-maven&apos;&lt;/span&gt;
 
- group=&amp;#39;com.github.YourUsername&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ group&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;com.github.YourUsername&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;创建一个 release&lt;/h2&gt;
 &lt;p&gt;为你的&lt;code class=&quot;language-text&quot;&gt;Github&lt;/code&gt;仓库创建一个&lt;code class=&quot;language-text&quot;&gt;release&lt;/code&gt;
 &lt;span
@@ -5415,16 +5414,16 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/68c1a4
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;拉依赖&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;allprojects {
- repositories {
-    jcenter()
-    maven { url &amp;quot;https://jitpack.io&amp;quot; }
- }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;allprojects &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+ repositories &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;jcenter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    maven &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; url &lt;span class=&quot;token string gstring&quot;&gt;&quot;https://jitpack.io&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;最后&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;dependencies {
-    compile &amp;#39;com.github.YourUsername:YourProjectName:YourProjectVersion&amp;#39;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[上传项目到jcenter]]></title><description><![CDATA[记录一下开发发布项目到的过程 Android 开发过程中需要拉很多依赖，比如官方的库，通常都是一句话调用，非常方便
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;dependencies &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    compile &lt;span class=&quot;token string&quot;&gt;&apos;com.github.YourUsername:YourProjectName:YourProjectVersion&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[上传项目到jcenter]]></title><description><![CDATA[记录一下开发发布项目到的过程 Android 开发过程中需要拉很多依赖，比如官方的库，通常都是一句话调用，非常方便
  之前也使用过，比起方便很多，不过使用的人没有用的多，新建 Android 项目也不会自己配置，如果你想用，可以看这篇文章上传项目到 jitpack…]]></description><link>https://evilmouth.net/maven-jcenter/</link><guid isPermaLink="false">https://evilmouth.net/maven-jcenter/</guid><pubDate>Mon, 08 May 2017 10:33:55 GMT</pubDate><content:encoded>&lt;p&gt;记录一下&lt;code class=&quot;language-text&quot;&gt;Android&lt;/code&gt;开发发布项目到&lt;code class=&quot;language-text&quot;&gt;jcenter&lt;/code&gt;的过程&lt;/p&gt;
 &lt;p&gt;Android 开发过程中需要拉很多依赖，比如官方的库，通常都是一句话调用，非常方便
 &lt;span
@@ -5550,157 +5549,157 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/10ce84
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;添加插件&lt;/h2&gt;
 &lt;p&gt;为根目录的&lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt;的&lt;code class=&quot;language-text&quot;&gt;dependencies&lt;/code&gt;添加&lt;code class=&quot;language-text&quot;&gt;bintray&lt;/code&gt;插件&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;classpath &amp;#39;com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3&amp;#39;
-classpath &amp;#39;com.github.dcendents:android-maven-gradle-plugin:1.5&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;classpath &lt;span class=&quot;token string&quot;&gt;&apos;com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3&apos;&lt;/span&gt;
+classpath &lt;span class=&quot;token string&quot;&gt;&apos;com.github.dcendents:android-maven-gradle-plugin:1.5&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;修改 module&lt;/h2&gt;
 &lt;p&gt;修改你想发布的&lt;code class=&quot;language-text&quot;&gt;library&lt;/code&gt;级别的 module 的&lt;code class=&quot;language-text&quot;&gt;build.gradle&lt;/code&gt;，直接在后面添加如下代码&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ext {
-    bintrayRepo = &amp;#39;maven&amp;#39;//上面创建`Repository`的是`Name`
-    bintrayName = &amp;#39;damon&amp;#39;//你想要发布的仓库的名称
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;ext &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    bintrayRepo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;maven&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//上面创建`Repository`的是`Name`&lt;/span&gt;
+    bintrayName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;damon&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//你想要发布的仓库的名称&lt;/span&gt;
 
-    publishedGroupId = &amp;#39;com.zyhang&amp;#39;//groupId，跟下面的artifact组合
-    artifact = &amp;#39;damon&amp;#39;//artifact，跟上面的groupId组合，到时候别人拉依赖就是`compile &amp;#39;com.zyhang:damon:1.0.0&amp;#39;`
+    publishedGroupId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;com.zyhang&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//groupId，跟下面的artifact组合&lt;/span&gt;
+    artifact &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;damon&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//artifact，跟上面的groupId组合，到时候别人拉依赖就是`compile &apos;com.zyhang:damon:1.0.0&apos;`&lt;/span&gt;
 
-    siteUrl = &amp;#39;https://github.com/izyhang/Damon&amp;#39;//项目地址
-    gitUrl = &amp;#39;https://github.com/izyhang/Damon.git&amp;#39;//项目git地址
+    siteUrl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/izyhang/Damon&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//项目地址&lt;/span&gt;
+    gitUrl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;https://github.com/izyhang/Damon.git&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//项目git地址&lt;/span&gt;
 
-    libraryVersion = &amp;#39;1.0.0&amp;#39;//版本号
-    libraryName = &amp;#39;Damon&amp;#39;//名称
-    libraryDescription = &amp;#39;a android mvp framework based on rxjava rxlifecycle&amp;#39;//介绍
+    libraryVersion &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;1.0.0&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//版本号&lt;/span&gt;
+    libraryName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Damon&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//名称&lt;/span&gt;
+    libraryDescription &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;a android mvp framework based on rxjava rxlifecycle&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//介绍&lt;/span&gt;
 
-    developerId = &amp;#39;zyhang&amp;#39;//开发者id
-    developerName = &amp;#39;zyhang&amp;#39;//开发者名称
-    developerEmail = &amp;#39;zyhang4502@gmail.com&amp;#39;//开发者邮箱
+    developerId &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zyhang&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//开发者id&lt;/span&gt;
+    developerName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zyhang&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//开发者名称&lt;/span&gt;
+    developerEmail &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;zyhang4502@gmail.com&apos;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//开发者邮箱&lt;/span&gt;
 
-    //以下不用改动
-    licenseName = &amp;#39;The Apache Software License, Version 2.0&amp;#39;
-    licenseUrl = &amp;#39;http://www.apache.org/licenses/LICENSE-2.0.txt&amp;#39;
-    allLicenses = [&amp;quot;Apache-2.0&amp;quot;]
-}
+    &lt;span class=&quot;token comment&quot;&gt;//以下不用改动&lt;/span&gt;
+    licenseName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;The Apache Software License, Version 2.0&apos;&lt;/span&gt;
+    licenseUrl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;http://www.apache.org/licenses/LICENSE-2.0.txt&apos;&lt;/span&gt;
+    allLicenses &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;Apache-2.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-//这两句是编译上传配置
-apply from:&amp;#39;../gradle/install.gradle&amp;#39;
-apply from:&amp;#39;../gradle/bintray.gradle&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token comment&quot;&gt;//这两句是编译上传配置&lt;/span&gt;
+apply from&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;../gradle/install.gradle&apos;&lt;/span&gt;
+apply from&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;../gradle/bintray.gradle&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;配置用户信息和 API key&lt;/h2&gt;
 &lt;p&gt;打开项目的&lt;code class=&quot;language-text&quot;&gt;local.properties&lt;/code&gt;文件并增加&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;bintray.user=zyhang//刚才`Username
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;bintray.user=zyhang//刚才`Username
 bintray.apikey=*********************************//刚才的API key&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;编译上传配置&lt;/h2&gt;
 &lt;p&gt;在项目的&lt;code class=&quot;language-text&quot;&gt;gradle&lt;/code&gt;文件夹新建两个文件&lt;code class=&quot;language-text&quot;&gt;install.gradle&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;bintray.gradle&lt;/code&gt;，其内容如下&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;install.gradle&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;apply plugin: &amp;#39;com.github.dcendents.android-maven&amp;#39;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;apply plugin&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;com.github.dcendents.android-maven&apos;&lt;/span&gt;
 
-group = publishedGroupId                               // Maven Group ID for the artifact
+group &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; publishedGroupId                               &lt;span class=&quot;token comment&quot;&gt;// Maven Group ID for the artifact&lt;/span&gt;
 
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging &amp;#39;aar&amp;#39;
+install &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repositories&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;mavenInstaller &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// This generates POM.xml with proper parameters&lt;/span&gt;
+        pom &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            project &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                packaging &lt;span class=&quot;token string&quot;&gt;&apos;aar&apos;&lt;/span&gt;
                 groupId publishedGroupId
                 artifactId artifact
 
-                // Add your description here
+                &lt;span class=&quot;token comment&quot;&gt;// Add your description here&lt;/span&gt;
                 name libraryName
                 description libraryDescription
                 url siteUrl
 
-                // Set your license
-                licenses {
-                    license {
+                &lt;span class=&quot;token comment&quot;&gt;// Set your license&lt;/span&gt;
+                licenses &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    license &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
                         name licenseName
                         url licenseUrl
-                    }
-                }
-                developers {
-                    developer {
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                developers &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    developer &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
                         id developerId
                         name developerName
                         email developerEmail
-                    }
-                }
-                scm {
+                    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                scm &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
                     connection gitUrl
                     developerConnection gitUrl
                     url siteUrl
-                }
-            }
-        }
-    }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;bintray.gradle&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;apply plugin: &amp;#39;com.jfrog.bintray&amp;#39;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;apply plugin&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;com.jfrog.bintray&apos;&lt;/span&gt;
 
-version = libraryVersion
+version &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; libraryVersion
 
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = &amp;#39;sources&amp;#39;
-}
+task &lt;span class=&quot;token function&quot;&gt;sourcesJar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Jar&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    from android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sourceSets&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;main&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;srcDirs
+    classifier &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;sources&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-artifacts {
+artifacts &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     archives sourcesJar
-}
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-android.libraryVariants.all { variant -&amp;gt;
-    println variant.javaCompile.classpath.files
-    if(variant.name == &amp;#39;release&amp;#39;) {
-        task(&amp;quot;generate${variant.name.capitalize()}Javadoc&amp;quot;, type: Javadoc) {
-            // title = &amp;#39;&amp;#39;
-            // description = &amp;#39;&amp;#39;
-            source = variant.javaCompile.source
-            classpath = files(variant.javaCompile.classpath.files, project.android.getBootClasspath())
-            options {
-                encoding &amp;quot;utf-8&amp;quot;
-                links &amp;quot;http://docs.oracle.com/javase/7/docs/api/&amp;quot;
-                linksOffline &amp;quot;http://d.android.com/reference&amp;quot;, &amp;quot;${android.sdkDirectory}/docs/reference&amp;quot;
-            }
-            exclude &amp;#39;**/BuildConfig.java&amp;#39;
-            exclude &amp;#39;**/R.java&amp;#39;
-        }
-        task(&amp;quot;javadoc${variant.name.capitalize()}Jar&amp;quot;, type: Jar, dependsOn: &amp;quot;generate${variant.name.capitalize()}Javadoc&amp;quot;) {
-            classifier = &amp;#39;javadoc&amp;#39;
-            from tasks.getByName(&amp;quot;generate${variant.name.capitalize()}Javadoc&amp;quot;).destinationDir
-        }
-        artifacts {
-            archives tasks.getByName(&amp;quot;javadoc${variant.name.capitalize()}Jar&amp;quot;)
-        }
-    }
-}
+android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;libraryVariants&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;all &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; variant &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt;
+    println variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;javaCompile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classpath&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;files
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;release&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;generate&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;Javadoc&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Javadoc&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token comment&quot;&gt;// title = &apos;&apos;&lt;/span&gt;
+            &lt;span class=&quot;token comment&quot;&gt;// description = &apos;&apos;&lt;/span&gt;
+            source &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;javaCompile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;source
+            classpath &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;javaCompile&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classpath&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;files&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; project&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getBootClasspath&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            options &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                encoding &lt;span class=&quot;token string gstring&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;
+                links &lt;span class=&quot;token string gstring&quot;&gt;&quot;http://docs.oracle.com/javase/7/docs/api/&quot;&lt;/span&gt;
+                linksOffline &lt;span class=&quot;token string gstring&quot;&gt;&quot;http://d.android.com/reference&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;sdkDirectory&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;/docs/reference&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            exclude &lt;span class=&quot;token string&quot;&gt;&apos;**/BuildConfig.java&apos;&lt;/span&gt;
+            exclude &lt;span class=&quot;token string&quot;&gt;&apos;**/R.java&apos;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;javadoc&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;Jar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Jar&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dependsOn&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string gstring&quot;&gt;&quot;generate&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;Javadoc&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            classifier &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;javadoc&apos;&lt;/span&gt;
+            from tasks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getByName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;generate&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;Javadoc&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;destinationDir
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        artifacts &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            archives tasks&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getByName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;javadoc&lt;span class=&quot;token expression&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;variant&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;Jar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-// Bintray
-Properties properties = new Properties()
-properties.load(project.rootProject.file(&amp;#39;local.properties&amp;#39;).newDataInputStream())
+&lt;span class=&quot;token comment&quot;&gt;// Bintray&lt;/span&gt;
+Properties properties &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Properties&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+properties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;project&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;rootProject&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;local.properties&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;newDataInputStream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-bintray {
-    user = properties.getProperty(&amp;quot;bintray.user&amp;quot;)
-    key = properties.getProperty(&amp;quot;bintray.apikey&amp;quot;)
+bintray &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    user &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; properties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;bintray.user&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; properties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;bintray.apikey&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-    configurations = [&amp;#39;archives&amp;#39;]
-    pkg {
-        repo = bintrayRepo
-        name = bintrayName
-        desc = libraryDescription
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = allLicenses
-        publish = true
-        publicDownloadNumbers = true
-        version {
-            desc = libraryDescription
-            gpg {
-                sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = properties.getProperty(&amp;quot;bintray.gpg.password&amp;quot;)
-                //Optional. The passphrase for GPG signing&amp;#39;
-            }
-        }
-    }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    configurations &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;archives&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    pkg &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        repo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; bintrayRepo
+        name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; bintrayName
+        desc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; libraryDescription
+        websiteUrl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; siteUrl
+        vcsUrl &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; gitUrl
+        licenses &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; allLicenses
+        publish &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+        publicDownloadNumbers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+        version &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            desc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; libraryDescription
+            gpg &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                sign &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//Determines whether to GPG sign the files. The default is false&lt;/span&gt;
+                passphrase &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; properties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getProperty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string gstring&quot;&gt;&quot;bintray.gpg.password&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;token comment&quot;&gt;//Optional. The passphrase for GPG signing&apos;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;上传&lt;/h2&gt;
 &lt;p&gt;配置完成，准备上传到&lt;code class=&quot;language-text&quot;&gt;bintray&lt;/code&gt;
 直接使用&lt;code class=&quot;language-text&quot;&gt;Android Studio&lt;/code&gt;的&lt;code class=&quot;language-text&quot;&gt;Terminal&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;./gradlew install
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;./gradlew &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;
 ./gradlew bintrayupload&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;如果遇到&lt;code class=&quot;language-text&quot;&gt;permission denied: ./gradlew&lt;/code&gt;
 可以先执行&lt;code class=&quot;language-text&quot;&gt;chmod +x gradlew&lt;/code&gt;&lt;/p&gt;
@@ -5739,17 +5738,17 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/bc2aaa
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;添加到 jcenter&lt;/h2&gt;
 &lt;p&gt;虽然现在你的&lt;code class=&quot;language-text&quot;&gt;library&lt;/code&gt;已经发布了，但是也只是发布在你个人的&lt;code class=&quot;language-text&quot;&gt;Maven&lt;/code&gt;仓库中，如果别人要添加此依赖，还必须定义你的仓库的地址，如下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;repositories {
-    maven {
-        url  &amp;quot;http://dl.bintray.com/zyhang/maven&amp;quot;//此地址可以在`package`页的`SET ME UP`里面找到
-    }
-}
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;groovy&quot;&gt;&lt;pre class=&quot;language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;repositories &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    maven &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        url  &lt;span class=&quot;token string gstring&quot;&gt;&quot;http://dl.bintray.com/zyhang/maven&quot;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;//此地址可以在`package`页的`SET ME UP`里面找到&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-...
+&lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;
 
-dependencies {
-    compile &amp;#39;com.zyhang:damon:1.0.0&amp;#39;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+dependencies &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    compile &lt;span class=&quot;token string&quot;&gt;&apos;com.zyhang:damon:1.0.0&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;但是这样就与我们的预期不一致了，我们是想要一句话直接调用，不需要再去定义什么仓库地址，所以此时你只需要同步你的仓库到&lt;code class=&quot;language-text&quot;&gt;jcenter&lt;/code&gt;就行了
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -5882,33 +5881,33 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/d13d2b
 &lt;p&gt;假设从来没有配过 ssh，以下是生成默认 key&lt;/p&gt;
 &lt;h3&gt;1.配置 git 用户名以及邮箱&lt;/h3&gt;
 &lt;p&gt;如果配置了全局 git 用户名以及邮箱这一步可以跳过，也可以为每一个 key 都配置专属 git 用户名邮箱&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ git config user.name &amp;quot;你的用户名&amp;quot;
-$ git config user.email &amp;quot;你的邮箱&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.name &lt;span class=&quot;token string&quot;&gt;&quot;你的用户名&quot;&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; config user.email &lt;span class=&quot;token string&quot;&gt;&quot;你的邮箱&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;在 config 后面加上&lt;code class=&quot;language-text&quot;&gt;--global&lt;/code&gt;即可设置全局，一劳永逸&lt;/p&gt;
 &lt;h3&gt;2.生成 ssh key&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ssh-keygen -t rsa -C &amp;quot;你的邮箱&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ ssh-keygen -t rsa -C &lt;span class=&quot;token string&quot;&gt;&quot;你的邮箱&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;然后一路回车即可，不要输入任何东西，就可以在根目录的&lt;code class=&quot;language-text&quot;&gt;~/.ssh&lt;/code&gt;目录下看到两个文件&lt;code class=&quot;language-text&quot;&gt;id_rsa&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;id_rsa.pub&lt;/code&gt;，其中 pub 后缀的文件里面的内容就是后面需要使用的 key&lt;/p&gt;
 &lt;h3&gt;3.上传 key 到 Github&lt;/h3&gt;
 &lt;p&gt;可以使用&lt;code class=&quot;language-text&quot;&gt;clipcopy&lt;/code&gt;命令，也可以自行打开文件复制&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ clipcopy &amp;lt; ~/.ssh/id_rsa.pub&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ clipcopy &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; ~/.ssh/id_rsa.pub&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;复制完内容后就是到 Github 个人设置里面添加 SSH 公匙&lt;/p&gt;
 &lt;h3&gt;4.验证是否成功&lt;/h3&gt;
 &lt;p&gt;在 Github 添加公匙后，就可以验证是否链接成功&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ssh -T git@github.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; -T git@github.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;按提示输入 yes 并稍等片刻看到以下内容就是配置成功&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Hi 你的用户名! You&amp;#39;ve successfully authenticated, but GitHub does not provide shell access.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Hi 你的用户名&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt; You&apos;ve successfully authenticated, but GitHub does not provide shell access.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;生成多个 ssh key&lt;/h2&gt;
 &lt;p&gt;现在有很多 git 仓库，所以配置一个 ssh key 是远远不够的，所以需要配置多个 ssh key，但是继续使用上面步骤会覆盖之前配置的 Github 公匙，因为在生成的时候没有指定名称，所以这一步是关键，下面以 gitlab 实例&lt;/p&gt;
 &lt;h3&gt;1.生成 ssh key 并指定名称&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitlab -C &amp;quot;你的邮箱&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitlab -C &lt;span class=&quot;token string&quot;&gt;&quot;你的邮箱&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;然后继续一路回车，就可以在根目录的&lt;code class=&quot;language-text&quot;&gt;~/.ssh&lt;/code&gt;目录下看到两个文件&lt;code class=&quot;language-text&quot;&gt;id_rsa_gitlab&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;id_rsa_gitlab.pub&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;2.新增并配置或修改 config&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ touch ~/.ssh/config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; ~/.ssh/config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;并在 config 文件添加以下内容&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Host gitlab.com
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;Host gitlab.com
     IdentityFile ~/.ssh/id_rsa.gitlab&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;完整例子&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Host github.com
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;Host github.com
     IdentityFile ~/.ssh/id_rsa.github
 Host gitlab.com
     IdentityFile ~/.ssh/id_rsa.gitlab
@@ -5916,13 +5915,13 @@ Host git.coding.net
     IdentityFile ~/.ssh/id_rsa.coding&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;3.上传&lt;code class=&quot;language-text&quot;&gt;id_rsa_gitlab.pub&lt;/code&gt;内容到 gitlab 公匙&lt;/h3&gt;
 &lt;h3&gt;4.验证&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ ssh -T git@gitlab.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;ssh&lt;/span&gt; -T git@gitlab.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;看到以下内容表示配置成功&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Welcome to GitLab, 你的用户名!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Welcome to GitLab, 你的用户名&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;之后再配置其它 git 的 ssh key 就继续重复上述步骤就可以了，重点就是指定名称和配置 config 文件&lt;/p&gt;
 &lt;h2&gt;遇到带端口的 git 地址&lt;/h2&gt;
 &lt;p&gt;如果公司自搭 git 服务器带有端口号，那么需要配置 Port&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Host xxx.xxx.xxx
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;Host xxx.xxx.xxx
     IdentityFile ~/.ssh/id_rsa.xxx
     Port xxxx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[使用Hexo搭载博客]]></title><description><![CDATA[记录一下通过 Hexo 搭载个人博客过程，不得不说 Hexo 真的强大。 官方文档
 https://hexo.io/zh-cn/docs/index.html 安装前提 系统环境必须有 Node 和 Git https://nodejs.org/zh-cn/ https…]]></description><link>https://evilmouth.net/hexo-blog-carry/</link><guid isPermaLink="false">https://evilmouth.net/hexo-blog-carry/</guid><pubDate>Fri, 24 Feb 2017 16:18:14 GMT</pubDate><content:encoded>&lt;p&gt;记录一下通过 Hexo 搭载个人博客过程，不得不说 Hexo 真的强大。&lt;/p&gt;
@@ -5936,17 +5935,17 @@ https://hexo.io/zh-cn/docs/index.html 安装前提 系统环境必须有 Node �
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;https://git-scm.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;安装 Hexo&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm install -g hexo-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g hexo-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;没有 npm 可以使用 HomeBrew 安装，很强大的工具（mac）
 &lt;a href=&quot;https://brew.sh/&quot;&gt;https://brew.sh/&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;初始化&lt;/h2&gt;
 &lt;p&gt;安装完 Hexo 后需要 init 一下并创建本地 blog 文件夹&lt;/p&gt;
 &lt;p&gt;下面的&lt;code class=&quot;language-text&quot;&gt;&amp;lt;folder&amp;gt;&lt;/code&gt;随意换成自己想要的文件夹名，如 blog&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ hexo init &amp;lt;folder&amp;gt;
-$ cd &amp;lt;folder&amp;gt;
-$ npm install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ hexo init &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;folder&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+$ &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;folder&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;运行后可以在根目录找到&lt;folder&gt;文件夹，里面目录大概如下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;none&quot;&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;.
 ├── _config.yml
 ├── package.json
 ├── scaffolds
@@ -5955,9 +5954,9 @@ $ npm install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 |   └── _posts
 └── themes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;验证是否配置成功&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ hexo s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ hexo s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;运行后可以看到命令行&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;INFO  Start processing
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;INFO  Start processing
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;打开链接能正常显示就算配置成功了&lt;/p&gt;
 &lt;h2&gt;Github Pages Or Coding Pages&lt;/h2&gt;
@@ -5968,7 +5967,7 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.&lt;/code&
 &lt;a href=&quot;https://blog.zyhang.com/git-ssh-mac/&quot;&gt;https://blog.zyhang.com/git-ssh-mac/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;需要给 Hexo 安装个 Git 插件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm install hexo-deployer-git --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; hexo-deployer-git --save&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;第一个选择 部署到 Github Pages&lt;/h3&gt;
 &lt;p&gt;部署到 Github 是个不错的选择，免费且有 300MB 空间，正常博客够用的，不过是国外的，访问速度可能有点慢&lt;/p&gt;
 &lt;h4&gt;创建仓库&lt;/h4&gt;
@@ -6106,17 +6105,17 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/6529d8
   &lt;/a&gt;
     &lt;/span&gt;
 这时候会多出一栏文字&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Your site is ready to be published at http://abcd.github.io/.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;Your site is ready to be published at http://abcd.github.io/.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;就可以通过这个网址访问了&lt;/p&gt;
 &lt;h4&gt;配置_config.xml&lt;/h4&gt;
 &lt;p&gt;打开刚才初始化时的文件夹根目录下的_config.xml 文件，并修改 deploy 下属性，abcd 改为你的 Github 用户名&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;deploy:
-  type: git
-  repo:
-    github: git@github.com:abcd/abcd.github.io.git
-  branch: master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git
+  &lt;span class=&quot;token key atrule&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git@github.com&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;abcd/abcd.github.io.git
+  &lt;span class=&quot;token key atrule&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;部署&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ hexo d -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ hexo d -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;部署成功后使用刚才 Github Pages 地址就可以访问你的博客了。&lt;/p&gt;
 &lt;h3&gt;第二个选择 部署到 Coding Pages&lt;/h3&gt;
 &lt;p&gt;也可以部署到 Coding，毕竟国内，而且项目可以设置私有，避免泄露某些重要 key&lt;/p&gt;
@@ -6219,14 +6218,14 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/9d4f78
     &lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;配置_config.xml&lt;/h4&gt;
 &lt;p&gt;打开刚才初始化时的文件夹根目录下的_config.xml 文件，并修改 deploy 下属性，abcd 改为你的 Coding 用户名，可以看到 github 被注释掉了，如果想同时部署到多个仓库，就可以采用这种方式&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;deploy:
-  type: git
-  repo:
-    # github: git@github.com:abcd/abcd.github.io.git
-    coding: git@git.coding.net:abcd/abcd.coding.me.git
-  branch: master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git
+  &lt;span class=&quot;token key atrule&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;# github: git@github.com:abcd/abcd.github.io.git&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;coding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git@git.coding.net&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;abcd/abcd.coding.me.git
+  &lt;span class=&quot;token key atrule&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;部署&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ hexo d -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;$ hexo d -g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;同样部署成功后使用刚才 Coding Pages 地址就可以访问你的博客了。&lt;/p&gt;
 &lt;h2&gt;博客配置&lt;/h2&gt;
 &lt;p&gt;部署的博客上面有些信息是默认的，比如博客名称作者名称等等，肯定需要改成自己的，可以参考

@@ -55,48 +55,48 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/17896d
 <ul>
 <li>将下方代码添加到 library module 的 build.gradle 文件</li>
 </ul>
-<div class="gatsby-highlight" data-language="gradle"><pre class="language-gradle"><code class="language-gradle">apply plugin: &#39;maven-publish&#39; // 添加到library build.gradle的最上面
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">apply plugin<span class="token punctuation">:</span> <span class="token string">'maven-publish'</span> <span class="token comment">// 添加到library build.gradle的最上面</span>
 
-def githubProperties = new Properties()
-githubProperties.load(new FileInputStream(rootProject.file(&quot;github.properties&quot;)))
+<span class="token keyword">def</span> githubProperties <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Properties</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+githubProperties<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>rootProject<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string gstring">"github.properties"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-def getVersionName = { -&gt;
- return &quot;1.0.2&quot; // 仓库版本
-}
+<span class="token keyword">def</span> getVersionName <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">-></span>
+ <span class="token keyword">return</span> <span class="token string gstring">"1.0.2"</span> <span class="token comment">// 仓库版本</span>
+<span class="token punctuation">}</span>
 
-def getArtificatId = { -&gt;
- return &quot;sampleAndroidLib&quot; // 仓库Id
-}
+<span class="token keyword">def</span> getArtificatId <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">-></span>
+ <span class="token keyword">return</span> <span class="token string gstring">"sampleAndroidLib"</span> <span class="token comment">// 仓库Id</span>
+<span class="token punctuation">}</span>
 
-publishing {
- publications {
-   bar(MavenPublication) {
-      groupId &#39;com.enefce.libraries&#39; // 仓库组Id
-      artifactId getArtificatId()
-      version getVersionName()
-      artifact(&quot;$buildDir/outputs/aar/${getArtificatId()}-release.aar&quot;)
-    }
- }
+publishing <span class="token punctuation">{</span>
+ publications <span class="token punctuation">{</span>
+   <span class="token function">bar</span><span class="token punctuation">(</span>MavenPublication<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      groupId <span class="token string">'com.enefce.libraries'</span> <span class="token comment">// 仓库组Id</span>
+      artifactId <span class="token function">getArtificatId</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      version <span class="token function">getVersionName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token function">artifact</span><span class="token punctuation">(</span><span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span>buildDir</span>/outputs/aar/<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span><span class="token function">getArtificatId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>-release.aar"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
 
-repositories {
-        maven {
-               name = &quot;GitHubPackages&quot;
-        /** Configure path of your package repository on Github
+repositories <span class="token punctuation">{</span>
+        maven <span class="token punctuation">{</span>
+               name <span class="token operator">=</span> <span class="token string gstring">"GitHubPackages"</span>
+        <span class="token comment">/** Configure path of your package repository on Github
          ** GITHUB_USERID替换成你的GitHub账户Id
          ** REPOSITORY替换成你的项目名称
-        */
- url = uri(&quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&quot;)
-credentials {
-        /** Create github.properties in root project folder file with
+        */</span>
+ url <span class="token operator">=</span> <span class="token function">uri</span><span class="token punctuation">(</span><span class="token string gstring">"https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY"</span><span class="token punctuation">)</span>
+credentials <span class="token punctuation">{</span>
+        <span class="token comment">/** Create github.properties in root project folder file with
          ** gpr.usr=GITHUB_USER_ID &amp; gpr.key=PERSONAL_ACCESS_TOKEN
-         ** Set env variable GPR_USER &amp; GPR_API_KEY if not adding a properties file**/
+         ** Set env variable GPR_USER &amp; GPR_API_KEY if not adding a properties file**/</span>
 
-         username = githubProperties[&#39;gpr.usr&#39;] ?: System.getenv(&quot;GPR_USER&quot;)
-         password = githubProperties[&#39;gpr.key&#39;] ?: System.getenv(&quot;GPR_API_KEY&quot;)
-      }
-    }
-  }
-}</code></pre></div>
+         username <span class="token operator">=</span> githubProperties<span class="token punctuation">[</span><span class="token string">'gpr.usr'</span><span class="token punctuation">]</span> <span class="token operator">?:</span> System<span class="token punctuation">.</span><span class="token function">getenv</span><span class="token punctuation">(</span><span class="token string gstring">"GPR_USER"</span><span class="token punctuation">)</span>
+         password <span class="token operator">=</span> githubProperties<span class="token punctuation">[</span><span class="token string">'gpr.key'</span><span class="token punctuation">]</span> <span class="token operator">?:</span> System<span class="token punctuation">.</span><span class="token function">getenv</span><span class="token punctuation">(</span><span class="token string gstring">"GPR_API_KEY"</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <h3>Step 4 - 执行发布</h3>
 <blockquote>
 <p>在执行发布之前需要确保编译过，也就是<code class="language-text">build</code>命令，并能在<code class="language-text">build/outputs/aar/</code>路径找到编译后的 aar 文件</p>
@@ -152,29 +152,29 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/e9386d
 <ul>
 <li>将下方代码添加到根 build.gradle 文件</li>
 </ul>
-<div class="gatsby-highlight" data-language="gradle"><pre class="language-gradle"><code class="language-gradle">allprojects {
-    repositories {
-        maven {
-          name = &quot;GitHubPackages&quot;
-          /**
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">allprojects <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        maven <span class="token punctuation">{</span>
+          name <span class="token operator">=</span> <span class="token string gstring">"GitHubPackages"</span>
+          <span class="token comment">/**
           ** GITHUB_USERID替换成刚才发布包的GitHub账号Id
           ** REPOSITORY替换成刚才发布包的项目名称
-          */
-          url = uri(&quot;https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY&quot;)
-        }
-    }
-}</code></pre></div>
+          */</span>
+          url <span class="token operator">=</span> <span class="token function">uri</span><span class="token punctuation">(</span><span class="token string gstring">"https://maven.pkg.github.com/GITHUB_USERID/REPOSITORY"</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <ul>
 <li>添加依赖到 app.module 文件</li>
 </ul>
-<div class="gatsby-highlight" data-language="gradle"><pre class="language-gradle"><code class="language-gradle">dependencies {
-  implementation &#39;com.example:package&#39;
-}</code></pre></div>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">dependencies <span class="token punctuation">{</span>
+  implementation <span class="token string">'com.example:package'</span>
+<span class="token punctuation">}</span></code></pre></div>
 <ul>
 <li>同步</li>
 </ul>
 <h2>Part 3 - 便携发布</h2>
-<div class="gatsby-highlight" data-language="gradle"><pre class="language-gradle"><code class="language-gradle">apply from: &#39;https://raw.githubusercontent.com/izyhang/GitHub-Packages-Publish/master/publish.gradle&#39;</code></pre></div></section><p style="margin-top:5.25rem">— Evil Mouth</p></article></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">apply from<span class="token punctuation">:</span> <span class="token string">'https://raw.githubusercontent.com/izyhang/GitHub-Packages-Publish/master/publish.gradle'</span></code></pre></div></section><p style="margin-top:5.25rem">— Evil Mouth</p></article></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   
   if(true) {
