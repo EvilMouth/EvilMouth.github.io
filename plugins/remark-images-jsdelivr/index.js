@@ -28,7 +28,7 @@ module.exports = ({ markdownAST }, pluginOptions) => {
       if (!url) return
       if (url.endsWith("jpg") || url.endsWith("jpeg") || url.endsWith("png")) {
         let html = node.value
-        const found = html.match(/\/static\/.+(\.jpg|\.jpeg|\.png)/g)
+        const found = html.match(/\/static\/.+?(\.jpg|\.jpeg|\.png)/g)
         if (found === null) return
         found.forEach((url, index) => {
           const jsdelivrUrl = prefix + url
