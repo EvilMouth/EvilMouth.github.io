@@ -19,13 +19,6 @@ before_script:
 script:
   - npm run build
 
-after_script:
-  - cd ./public
-
-branches:
-  only:
-    - main
-
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
@@ -33,5 +26,10 @@ deploy:
   keep_history: true
   local_dir: public
   cleanup: false
-  on:
-    branch: main
+
+after_script:
+  - cd ./public
+
+branches:
+  only:
+    - main
