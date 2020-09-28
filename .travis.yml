@@ -27,10 +27,11 @@ branches:
     - main
 
 deploy:
-  provider: pages
-  local_dir: public
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  provider: pages:git
+  token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  edge: true # opt in to dpl v2
   keep_history: true
+  local_dir: public
+  cleanup: false
   on:
     branch: main
