@@ -20,12 +20,18 @@ script:
   - npm run build
 
 deploy:
-  provider: pages:git
+  provider: pages
   token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   edge: true # opt in to dpl v2
+  target_branch: gh-pages
   keep_history: true
+  commit_message: Updates
   local_dir: public
+  name: CI
+  email: ci@evilmouth.net
   cleanup: false
+  on:
+    branch: main
 
 after_script:
   - cd ./public
