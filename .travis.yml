@@ -9,7 +9,12 @@ cache:
 install:
   - npm install
 
+git:
+  submodules: false
+
 before_script:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
 
 script:
   - npm run build
