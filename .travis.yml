@@ -29,6 +29,7 @@ deploy:
   local_dir: public
   name: CI
   email: ci@evilmouth.net
+  strategy: git
   cleanup: false
   on:
     branch: main
