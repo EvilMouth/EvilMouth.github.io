@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Oct 2020 10:51:48 GMT</lastBuildDate><item><title><![CDATA[Android 多模块启动方案]]></title><description><![CDATA[前言 在项目模块化后，为了解决模块之间互相依赖问题，通常会引入路由框架，通过路由框架将各个模块联系到一起。模块化后各个模块还可以独立运行，这时会有这样一个问题，当模块有各自的初始化任务（比如用户信息），通常会把这些初始化任务放在 Application#onCreate…]]></description><link>https://evilmouth.net/android-do-mo-kuai-qi-dong-fang-an/</link><guid isPermaLink="false">https://evilmouth.net/android-do-mo-kuai-qi-dong-fang-an/</guid><pubDate>Wed, 28 Oct 2020 21:13:46 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Evil Mouth]]></title><description><![CDATA[Learn. Record. To consolidate.]]></description><link>https://evilmouth.net</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Nov 2020 06:22:17 GMT</lastBuildDate><item><title><![CDATA[Android 多模块启动方案]]></title><description><![CDATA[前言 在项目模块化后，为了解决模块之间互相依赖问题，通常会引入路由框架，通过路由框架将各个模块联系到一起。模块化后各个模块还可以独立运行，这时会有这样一个问题，当模块有各自的初始化任务（比如用户信息），通常会把这些初始化任务放在 Application#onCreate…]]></description><link>https://evilmouth.net/android-do-mo-kuai-qi-dong-fang-an/</link><guid isPermaLink="false">https://evilmouth.net/android-do-mo-kuai-qi-dong-fang-an/</guid><pubDate>Wed, 28 Oct 2020 21:13:46 GMT</pubDate><content:encoded>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;在项目模块化后，为了解决模块之间互相依赖问题，通常会引入路由框架，通过路由框架将各个模块联系到一起。模块化后各个模块还可以独立运行，这时会有这样一个问题，当模块有各自的初始化任务（比如用户信息），通常会把这些初始化任务放在 Application#onCreate 方法进行初始化，当只编译一个模块时，其他模块的初始化任务有可能不需要执行，这时就只能新建一个 Application 或者抽离或者注释… 本方案就是为了解决这一现象而提出，还能解放 Application，使 Application 简洁明了&lt;/p&gt;
 &lt;!-- More --&gt;
 &lt;h2&gt;痛点分析&lt;/h2&gt;
@@ -106,6 +106,23 @@ https://cdn.jsdelivr.net/gh/EvilMouth/EvilMouth.github.io@gh-pages/static/c58f9a
 |   ---- e.E
 ---- g.G
 =========================================================================&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Intellij 插件补充&lt;/h3&gt;
+&lt;p&gt;由于各个模块的 StartupTask 各自以 id : String 声明，并且也是以 id 进行互相依赖，本质就是为了解决之间互相引用的问题，但是也导致了查找困难（必须通过全局搜索 id 进行跳转）&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，特意开发了一块 Intellij Plugin，目前也已经更新到 Github&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/52c361ce558f04851086186edecb5e01/f09ab/WX20201106-124004%402x.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 33.108108108108105%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABUklEQVQoz42R2W6DMBBF+f8vayv1JQlL4gBmKWGxwRizE93ajlr1sZaOfD3S3BnPOKyp0XABj3K4caNhOEcMQdpZ0kcL0U8QUqDtOeQgsSwLpmnCOI5QSmGeZ6ullHCKssEHUXgnEz5vI96CEXklcXZ9+NcQNMlA7iFiGsPzPbiua0mSBJRSRFEEz/PAOYc5zjIvSNiAtGRImx6Dmm2lMAxtQhxT3G53PB4ltm3Duq62w33fLcdx2Pfz+XwZDkog4S2SrwK0ZliXCW3LEQQBCCG4XFycTifkWWaTDcbYmBiM/om9DAcFUkjcc45rLsC6Gdmjg0dS+CTH5Zrg7FNcowJdJzQd6rpBWZaoqkoXby3my8bUMQNtWAemF1PVLVgrwTW9HNH1Si9k1AvRWigdk3YcwzD8Iv/EhBBwjmPXgd62f9i5bJZtW7Hriru+f/T2D74BXkgRDRkjxNkAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;WX20201106 124004 2x&quot; title=&quot;WX20201106 124004 2x&quot; src=&quot;/static/52c361ce558f04851086186edecb5e01/fcda8/WX20201106-124004%402x.png&quot; srcset=&quot;/static/52c361ce558f04851086186edecb5e01/12f09/WX20201106-124004%402x.png 148w,
+/static/52c361ce558f04851086186edecb5e01/e4a3f/WX20201106-124004%402x.png 295w,
+/static/52c361ce558f04851086186edecb5e01/fcda8/WX20201106-124004%402x.png 590w,
+/static/52c361ce558f04851086186edecb5e01/efc66/WX20201106-124004%402x.png 885w,
+/static/52c361ce558f04851086186edecb5e01/c83ae/WX20201106-124004%402x.png 1180w,
+/static/52c361ce558f04851086186edecb5e01/f09ab/WX20201106-124004%402x.png 1250w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该插件在&lt;strong&gt;2020.1&lt;/strong&gt;版本上开发，所以需要 &lt;strong&gt;AS&lt;/strong&gt; 更新到 &lt;strong&gt;201.6668.121&lt;/strong&gt; 以上&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;总结&lt;/h2&gt;
 &lt;p&gt;至此框架完成，并已开源 &lt;a href=&quot;https://github.com/EvilMouth/Startup&quot;&gt;EvilMouth/Startup&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[从 Hexo 到 Gatsby]]></title><description><![CDATA[没错，最近将博客从 Hexo 迁移到 Gatsby 了，为什么要迁移，有许多原因 喜欢折腾 最近将所有编辑器改成亮色，据说暗色亮色切换看（编译器和浏览器）容易加深散光，那博客也换吧 既然折腾起来了，那干脆试下 Gatsby（前段时间了解到） Gatsby 相比 Hexo…]]></description><link>https://evilmouth.net/cong-hexo-dao-gatsby/</link><guid isPermaLink="false">https://evilmouth.net/cong-hexo-dao-gatsby/</guid><pubDate>Thu, 17 Sep 2020 20:42:22 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
