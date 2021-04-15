@@ -60,6 +60,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "gh-pages": "npm run clean && npm run build && echo 'gh-pages ing' && npx gh-pages -d public"
+    "gh-pages": "npm run clean && npm run build && echo 'gh-pages ing' && npx gh-pages -d public",
+    "new": "sh ./new-post.sh"
   }
 }
