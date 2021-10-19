@@ -25,7 +25,7 @@ const Index = ({ data, location }) => {
             <a href="https://twitter.com/EvilLittleMouth">mention Twitter</a>
           </li>
           <li>
-            <a href="https://telegram.me/EvilLittleMouth">chat Telegram</a>
+            <a href="https://telegram.me/EvilMouth">chat Telegram</a>
           </li>
           <li>
             <Link to="/about/" rel="about">
