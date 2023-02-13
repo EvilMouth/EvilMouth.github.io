@@ -3,7 +3,7 @@ name: Test Build
 on:
   workflow_dispatch:
   push:
-    branches: [node18]
+    branches: [node18,clean]
 
 jobs:
   deploy:
