@@ -58,16 +58,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-177389301-1`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-baidu-analytics`,
       options: {
         siteId: `a23fc26fb8c87ab6a05607681dd70056`,
         head: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          `G-3SLDCRTZ6M`
+        ],
+        pluginConfig: {
+          head: false,
+        }
       },
     },
     `gatsby-plugin-feed`,
