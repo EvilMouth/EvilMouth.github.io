@@ -3,19 +3,31 @@ import { Link, graphql } from "gatsby"
 
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const authorName = data.site.siteMetadata.author.name
-  const posts = data.allMarkdownRemark.edges
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const authorName = data.site.siteMetadata?.author?.name || `Author`
+  const posts = data.allMarkdownRemark.nodes
+
+  if (posts.length === 0) {
+    return (
+      <Layout location={location} title={siteTitle}>
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Posts" description={`All Posts Of ${authorName}'s Blog`} />
+      <Seo title="Posts" description={`All Posts Of ${authorName}'s Blog`} />
       {/* <Bio /> */}
-      {posts.map(({ node }) => {
+      {posts.map(node => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
@@ -36,6 +48,7 @@ const BlogIndex = ({ data, location }) => {
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
+                itemProp="description"
               />
             </section>
           </article>
@@ -48,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  {
     site {
       siteMetadata {
         title
@@ -57,17 +70,16 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
         }
       }
     }

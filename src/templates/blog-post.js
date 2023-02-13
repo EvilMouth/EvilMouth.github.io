@@ -3,13 +3,12 @@ import { /*Link,*/ graphql } from "gatsby"
 
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 // import Comment from "../components/comment"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
+const BlogPostTemplate = ({ data: { site, markdownRemark: post }, /*pageContext,*/ location }) => {
+  const siteTitle = site.siteMetadata.title
   // const { previous, next } = pageContext
 
   return (
@@ -19,7 +18,7 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
       linkTo={`/blog/`}
       smallTitle={true}
     >
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         // description={post.frontmatter.description || post.excerpt}
         description={`${post.frontmatter.title} - ${post.frontmatter.tags} - ${post.frontmatter.categories}`}
@@ -49,7 +48,7 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
           style={{
             marginTop: rhythm(3),
           }}
-        >{`— ${data.site.siteMetadata.author.name}`}</p>
+        >{`— ${site.siteMetadata.author.name}`}</p>
         {/* <hr
           style={{
             marginBottom: rhythm(1),
@@ -95,7 +94,7 @@ const BlogPostTemplate = ({ data, /*pageContext,*/ location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($id: String!) {
     site {
       siteMetadata {
         title
@@ -104,7 +103,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
       html

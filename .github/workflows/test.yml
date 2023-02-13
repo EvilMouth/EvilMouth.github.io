@@ -1,9 +1,9 @@
-name: Update Github Pages
+name: Test Build
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [node18]
 
 jobs:
   deploy:
@@ -23,9 +23,3 @@ jobs:
       - run: npm ci
       - run: npm run format
       - run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public

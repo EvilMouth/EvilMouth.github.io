@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.author.name
@@ -10,7 +10,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Home" description={siteDescription} />
+      <Seo title="Home" description={siteDescription} />
       <div>
         <ul>
           <li>
